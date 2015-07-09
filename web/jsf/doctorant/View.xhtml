@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewDoctorantTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_idDoctorant}"/>
+                    <h:outputText value="#{doctorantController.selected.idDoctorant}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_cne}"/>
+                    <h:outputText value="#{doctorantController.selected.cne}" title="#{bundle.ViewDoctorantTitle_cne}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_cin}"/>
+                    <h:outputText value="#{doctorantController.selected.cin}" title="#{bundle.ViewDoctorantTitle_cin}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_nom}"/>
+                    <h:outputText value="#{doctorantController.selected.nom}" title="#{bundle.ViewDoctorantTitle_nom}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_prenom}"/>
+                    <h:outputText value="#{doctorantController.selected.prenom}" title="#{bundle.ViewDoctorantTitle_prenom}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_sexe}"/>
+                    <h:outputText value="#{doctorantController.selected.sexe}" title="#{bundle.ViewDoctorantTitle_sexe}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_datenassance}"/>
+                    <h:outputText value="#{doctorantController.selected.datenassance}" title="#{bundle.ViewDoctorantTitle_datenassance}">
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:outputText>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_salarie}"/>
+                    <h:outputText value="#{doctorantController.selected.salarie}" title="#{bundle.ViewDoctorantTitle_salarie}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_email1}"/>
+                    <h:outputText value="#{doctorantController.selected.email1}" title="#{bundle.ViewDoctorantTitle_email1}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_email2}"/>
+                    <h:outputText value="#{doctorantController.selected.email2}" title="#{bundle.ViewDoctorantTitle_email2}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_tel1}"/>
+                    <h:outputText value="#{doctorantController.selected.tel1}" title="#{bundle.ViewDoctorantTitle_tel1}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_tel2}"/>
+                    <h:outputText value="#{doctorantController.selected.tel2}" title="#{bundle.ViewDoctorantTitle_tel2}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_adresse}"/>
+                    <h:outputText value="#{doctorantController.selected.adresse}" title="#{bundle.ViewDoctorantTitle_adresse}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_autorisation}"/>
+                    <h:outputText value="#{doctorantController.selected.autorisation}" title="#{bundle.ViewDoctorantTitle_autorisation}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_employeur}"/>
+                    <h:outputText value="#{doctorantController.selected.employeur}" title="#{bundle.ViewDoctorantTitle_employeur}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_lieuemploi}"/>
+                    <h:outputText value="#{doctorantController.selected.lieuemploi}" title="#{bundle.ViewDoctorantTitle_lieuemploi}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_photo}"/>
+                    <h:outputText value="#{doctorantController.selected.photo}" title="#{bundle.ViewDoctorantTitle_photo}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_code}"/>
+                    <h:outputText value="#{doctorantController.selected.code}" title="#{bundle.ViewDoctorantTitle_code}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_idNationalite}"/>
+                    <h:outputText value="#{doctorantController.selected.idNationalite}" title="#{bundle.ViewDoctorantTitle_idNationalite}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_villeEmploi}"/>
+                    <h:outputText value="#{doctorantController.selected.villeEmploi}" title="#{bundle.ViewDoctorantTitle_villeEmploi}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_villeadresse}"/>
+                    <h:outputText value="#{doctorantController.selected.villeadresse}" title="#{bundle.ViewDoctorantTitle_villeadresse}"/>
+                    <h:outputText value="#{bundle.ViewDoctorantLabel_villenaissance}"/>
+                    <h:outputText value="#{doctorantController.selected.villenaissance}" title="#{bundle.ViewDoctorantTitle_villenaissance}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{doctorantController.destroyAndView}" value="#{bundle.ViewDoctorantDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewDoctorantEditLink}"/>
+                <br />
+                <h:commandLink action="#{doctorantController.prepareCreate}" value="#{bundle.ViewDoctorantCreateLink}" />
+                <br />
+                <h:commandLink action="#{doctorantController.prepareList}" value="#{bundle.ViewDoctorantShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewDoctorantIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

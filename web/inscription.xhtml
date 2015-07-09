@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <meta charset="UTF-8"></meta>
+        <title>Inscription</title>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no"></meta>
+        <link rel="icon" type="jsf/resources/assets/image/ico" href="favicon.ico"></link>
+
+        <!-- common stylesheets-->
+        <!-- bootstrap framework css -->
+        <link rel="stylesheet" href="resources/assets/bootstrap/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="resources/assets/bootstrap/css/bootstrap-responsive.min.css"></link>
+        <!-- iconSweet2 icon pack (16x16) -->
+        <link rel="stylesheet" href="resources/assets/img/icsw2_16/icsw2_16.css"></link>
+        <!-- splashy icon pack -->
+        <link rel="stylesheet" href="resources/assets/img/splashy/splashy.css"></link>
+        <!-- flag icons -->
+        <link rel="stylesheet" href="resources/assets/img/flags/flags.css"></link>
+        <!-- power tooltips -->
+        <link rel="stylesheet" href="resources/assets/js/lib/powertip/jquery.powertip.css"></link>
+        <!-- google web fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Abel"></link>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"></link>
+
+        <!-- smart wizard -->
+        <link rel="stylesheet" href="resources/assets/js/lib/smart-wizard/styles/smart_wizard.css"></link>
+
+        <link rel="stylesheet" href="resources/assets/js/lib/bootstrap-datepicker/css/datepicker.css"></link>
+
+        <link rel="stylesheet" href="resources/assets/css/beoro.css"></link>
+
+
+
+    </h:head>
+
+
+
+
+
+    <body class="bg_d">
+        <!-- main wrapper (without footer) -->    
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="pull-right top-search" style="padding-button:20px;">                          
+                        <h:form><p:commandLink action="#{loginBean.logout}" value="Se deconnecter"  ajax="false"/></h:form>                          							
+
+                    </div>						
+                    <div class="pull-right top-search" style="padding-right:20px;">
+
+                    </div>
+
+
+                    <div id="fade-menu" class="pull-left">
+                        <ul class="clearfix" id="mobile-nav">
+                            <li>
+                                <a href="index.xhtml">Accueil</a>
+                            </li>
+                            <li><a href="javascript:void(0)">Structure</a>
+                                <ul>
+                                    <li>
+                                        <a href="jsf/laboratoire/List.xhtml">Laboratoirs</a>
+                                    </li>
+                                    <li>
+                                        <a href="jsf/equipe/List.xhtml">Equipes</a>
+                                    </li>
+                                    <li>
+                                        <a href="jsf/professeur/List.xhtml">professeurs encadrants</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Inscription</a>
+                                <ul>
+                                    <li>
+                                        <a href="pieces.html">Consulter les Pièces</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">S'inscrire</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ul id="breadcrumbs">
+                <li><a href="index.xhtml"><i class="icon-home"></i></a></li>
+                <li><span>Inscription</span></li>
+            </ul>
+        </div>  
+
+        <!-- main content -->
+
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="w-box w-box-blue ">
+                        <div class="w-box-header">
+                            <h4>Formulaire d'inscription</h4>
+                        </div>
+
+                        <h:form>    
+                            <div class="w-box-content">
+                                <div class="row-fluid">
+                                    <div class="span12">
+                                        <div id="wizard-basic" class="swMain">
+                                            <ul>
+
+                                                <li>
+                                                    <a href="#sw-basic-step-1">
+                                                        <span class="stepNumber">1</span>
+                                                        <span class="stepDesc">
+                                                            Informations Personnelles<small>Etape 1 </small>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#sw-basic-step-2">
+                                                        <span class="stepNumber">2</span>
+                                                        <span class="stepDesc">
+                                                            Parcours scolaire <small>Etape 2</small>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#sw-basic-step-3">
+                                                        <span class="stepNumber">3</span>
+                                                        <span class="stepDesc">
+                                                            Emploi<small>Etape 3</small>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#sw-basic-step-4">
+                                                        <span class="stepNumber">4</span>
+                                                        <span class="stepDesc">
+                                                            Thèse <small>Etape 4 </small>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#sw-basic-step-5">
+                                                        <span class="stepNumber">5</span>
+                                                        <span class="stepDesc">
+                                                            Confirmation <small>Etape 5 </small>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+
+
+
+                                            <div id="sw-basic-step-1">
+                                                <div class="span6">
+
+                                                    <p class="heading_a" style="font-size:25px;">Veuillez saisir vos informations personnelles: </p>
+                                                    <div class="formSep"> 
+
+                                                        <h:outputLabel  value="#{bundle.CreateDoctorantLabel_nom}" for="nom" />
+                                                        <h:inputText id="nom" value="#{doctorantController.selected.nom}"  />
+
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_prenom}" for="prenom" />
+                                                        <h:inputText id="prenom" value="#{doctorantController.selected.prenom}"  />
+
+                                                        <h:outputLabel value="Nationalité:" for="idNationalite" />
+                                                        <h:selectOneMenu id="idNationalite" value="#{doctorantController.selected.idNationalite}"  >
+
+                                                            <f:selectItems value="#{nationaliteController.itemsAvailableSelectOne}"/>
+                                                        </h:selectOneMenu>
+
+                                                        <h:outputLabel value="Date de naissance" for="datenaissance" />
+                                                        <p:calendar value="#{doctorantController.selected.datenassance}" />
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_villenaissance}" for="villenaissance" />
+                                                        <h:selectOneMenu id="villenaissance" value="#{doctorantController.selected.villenaissance}" >
+
+                                                            <f:selectItems value="#{villeController.itemsAvailableSelectOne}"/>
+                                                        </h:selectOneMenu>
+
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_villeadresse}" for="villeadresse" />
+                                                        <h:selectOneMenu id="villeadresse" value="#{doctorantController.selected.villeadresse}" >
+
+                                                            <f:selectItems value="#{villeController.itemsAvailableSelectOne}"/>
+                                                        </h:selectOneMenu>
+                                                    </div>
+                                                </div>
+                                                <div class="span6">
+                                                    <div class="formSep"> 
+                                                        <br/><br/>
+
+                                                        <h:outputLabel value="CIN:" for="cin" />
+                                                        <h:inputText id="cin" value="#{doctorantController.selected.cin}" title="#{bundle.CreateDoctorantTitle_cin}"/>
+
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_cne}" for="cne" />
+                                                        <h:inputText id="cne" value="#{doctorantController.selected.cne}" title="#{bundle.CreateDoctorantTitle_cne}"/>
+
+
+                                                     
+
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_email2}" for="email2" />
+                                                        <p:inputText id="email2" value="#{doctorantController.selected.email2}" validatorMessage="Format d'email 2 invalide" >
+                                                            <f:validateRegex pattern="()| (^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$)" />
+                                                        </p:inputText> 
+
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_tel1}" for="tel1" />
+                                                        <h:inputText id="tel1" value="#{doctorantController.selected.tel1}" />
+
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_tel2}" for="tel2" />
+                                                        <h:inputText id="tel2" value="#{doctorantController.selected.tel2}"  />
+
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_sexe}" for="sexe" />
+                                                        <p:selectOneRadio id="sexe" value="#{doctorantController.selected.sexe}" >
+                                                            <f:selectItem itemLabel="Homme" itemValue="homme" />
+                                                            <f:selectItem itemLabel="Femme" itemValue="femme"  />
+                                                        </p:selectOneRadio>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div id="sw-basic-step-2">
+                                                <div class="span6" > 
+                                                    <p class="heading_a" style="font-size:25px;">Parcours scolaire: </p>
+                                                    <div class="formSep"> 
+
+                                                        <p class="heading" style="font-size:20px;">Diplome1 :</p>
+                                                        <h:outputLabel value="#{bundle.CreateObtenirDiplomeLabel_annee}" for="annee" />
+                                                        <p:calendar id="effect1" value="#{doctorantController.selectedObtenirDiplome.annee}" />
+                                                        <h:outputLabel value="#{bundle.CreateObtenirDiplomeLabel_specialiste}" for="specialiste" />
+                                                        <h:inputText id="specialiste" value="#{doctorantController.selectedObtenirDiplome.specialiste}" title="#{bundle.CreateObtenirDiplomeTitle_specialiste}" required="false" requiredMessage="#{bundle.CreateDoctorantRequiredMessage_specialite}"/>
+                                                        <h:outputLabel value="#{bundle.CreateObtenirDiplomeLabel_idEtablissement}" for="idEtablissement" />
+                                                        <h:selectOneMenu  hideNoSelectionOption="true"  id="idEtablissement" value="#{doctorantController.selectedObtenirDiplome.idEtablissement}" title="#{bundle.CreateObtenirDiplomeTitle_idEtablissement}" required="false" requiredMessage="#{bundle.CreateObtenirDiplomeRequiredMessage_idEtablissement}">
+
+                                                            <f:selectItems value="#{etablissementController.itemsAvailableSelectOne}"/>
+                                                        </h:selectOneMenu>
+                                                        <h:outputLabel value="#{bundle.CreateObtenirDiplomeLabel_idDiplome}" for="idDiplome" />
+                                                        <h:selectOneMenu id="idDiplome" value="#{doctorantController.selectedObtenirDiplome.idDiplome}" title="#{bundle.CreateObtenirDiplomeTitle_idDiplome}" required="false" requiredMessage="#{bundle.CreateObtenirDiplomeRequiredMessage_idDiplome}">
+
+                                                            <f:selectItems value="#{diplomeController.itemsAvailableSelectOne}"/>
+                                                        </h:selectOneMenu>
+                                                    </div> 
+                                                </div> 
+                                                <div class="span6" style="font-size:25px;">
+                                                    <div class="formSep"> 
+                                                        <br /><br />
+                                                        <p class="heading" style="font-size:20px;">Diplome2 (optionel) :</p>
+                                                        <h:outputLabel value="#{bundle.CreateObtenirDiplomeLabel_annee}" for="annee2" />
+                                                        <p:calendar id="effect2" value="#{doctorantController.selectedObtenirDiplome2.annee}" effect="fold" />  
+                                                        <h:outputLabel value="#{bundle.CreateObtenirDiplomeLabel_specialiste}" for="specialiste2" />
+                                                        <h:inputText required="false" id="specialiste2" value="#{doctorantController.selectedObtenirDiplome2.specialiste}" title="#{bundle.CreateObtenirDiplomeTitle_specialiste}" />
+                                                        <h:outputLabel value="#{bundle.CreateObtenirDiplomeLabel_idEtablissement}" for="idEtablissement2" />
+                                                        <h:selectOneMenu  required="false" id="idEtablissement2" value="#{doctorantController.selectedObtenirDiplome2.idEtablissement}"  >
+
+                                                            <f:selectItems value="#{etablissementController.itemsAvailableSelectOne}"/>
+                                                        </h:selectOneMenu>
+                                                        <h:outputLabel value="#{bundle.CreateObtenirDiplomeLabel_idDiplome}" for="idDiplome2" />
+                                                        <h:selectOneMenu hideNoSelectionOption="true" required="false" id="idDiplome2" value="#{doctorantController.selectedObtenirDiplome2.idDiplome}" >
+
+                                                            <f:selectItems value="#{diplomeController.itemsAvailableSelectOne}"/>
+                                                        </h:selectOneMenu>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div id="sw-basic-step-3">
+
+                                                <div class="span6" style="font-size:25px;">
+                                                    <p class="heading_a" style="font-size:25px;">Si vous avez un emploi !</p>
+
+                                                    <div class="formSep"> 
+
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_salarie}" for="salarie" >
+
+                                                            <p:selectBooleanCheckbox value="#{doctorantController.selected.salarie}" />  
+                                                        </h:outputLabel>
+
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_employeur}" for="employeur" />
+                                                        <h:inputText id="employeur" value="#{doctorantController.selected.employeur}" title="#{bundle.CreateDoctorantTitle_employeur}" required="false" requiredMessage="#{bundle.CreateDoctorantRequiredMessage_idNationalite}"/>
+
+
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_autorisation}" for="autorisation"  >
+                                                            <p:selectBooleanCheckbox id="autorisation" value="#{doctorantController.selected.autorisation}" required="false" requiredMessage="#{bundle.CreateDoctorantRequiredMessage_idNationalite}"/>
+                                                        </h:outputLabel>
+
+                                                    </div>    
+                                                </div>
+
+                                                <div class="span6" style="font-size:25px;">
+                                                    <div class="formSep"> 
+                                                        <br /><br />
+
+
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_lieuemploi}"  for="lieuemploi" />
+                                                        <h:inputText id="lieuemploi" value="#{doctorantController.selected.lieuemploi}" title="#{bundle.CreateDoctorantTitle_lieuemploi}" required="false" requiredMessage="#{bundle.CreateDoctorantRequiredMessage_idNationalite}"/>
+                                                        <h:outputLabel value="#{bundle.CreateDoctorantLabel_villeEmploi}" for="villeEmploi" />
+                                                        <h:selectOneMenu hideNoSelectionOption="true" id="villeEmploi" value="#{doctorantController.selected.villeEmploi}" title="#{bundle.CreateDoctorantTitle_villeEmploi}" required="false" requiredMessage="#{bundle.CreateDoctorantRequiredMessage_idNationalite}">
+
+                                                            <f:selectItems value="#{villeController.itemsAvailableSelectOne}" />
+                                                        </h:selectOneMenu>
+
+                                                    </div>    
+                                                </div>  
+
+                                            </div>
+
+                                            <div id="sw-basic-step-4">
+
+
+                                                <div class="span6" style="font-size:25px;">
+                                                    <p class="heading_a" style="font-size:25px;">Informations sur la thèse:</p>
+
+                                                    <div class="formSep"> 
+
+                                                        <h:outputLabel value="#{bundle.CreateInscriptionLabel_sujet}" for="sujet" />
+                                                        <p:inputTextarea  value="#{doctorantController.selectedInscription.sujet}" />                                                    
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="span6" style="font-size:25px;">
+                                                    <div class="formSep"> 
+                                                        <br /><br />
+
+                                                        <h:outputLabel value="#{bundle.CreateInscriptionLabel_encadrant}" for="encadrant" />
+                                                        <h:selectOneMenu  hideNoSelectionOption="true" id="encadrant" value="#{doctorantController.selectedInscription.encadrant}" title="#{bundle.CreateInscriptionTitle_encadrant}" required="false" requiredMessage="#{bundle.CreateInscriptionRequiredMessage_encadrant}">
+                                                            <f:selectItems value="#{professeurController.itemsAvailableSelectOne}"/>
+                                                        </h:selectOneMenu>
+                                                        <h:outputLabel value="#{bundle.CreateInscriptionLabel_coencadrant}" for="coencadrant" />
+                                                        <h:selectOneMenu hideNoSelectionOption="true" id="coencadrant" value="#{doctorantController.selectedInscription.coencadrant}" required="false" title="#{bundle.CreateInscriptionTitle_coencadrant}" >
+
+                                                            <f:selectItems value="#{professeurController.itemsAvailableSelectOne}"/>
+                                                        </h:selectOneMenu>
+                                                        <h:outputLabel value="#{bundle.CreateInscriptionLabel_boursier}" for="boursier" >
+                                                            <p:selectBooleanCheckbox value="#{doctorantController.selectedInscription.boursier}" required="false" requiredMessage="#{bundle.CreateDoctorantRequiredMessage_idNationalite}"/>  
+                                                        </h:outputLabel>
+
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div id="sw-basic-step-5">
+                                                <p class="heading_a" >Confirmation </p>
+                                                <p> Avez-vous bien verifie vos informations ? </p>
+
+                                                <h:inputHidden rendered="#{doctorantController.selected.email1=loginBean.uname}"  />
+
+                                                <h:inputHidden rendered="#{doctorantController.selected.code=loginBean.password}"  />
+
+
+                                                <div class="formSep">
+                                                    <h:commandButton action="#{doctorantController.create}" value="Enregistrer" class="btn buttonNext" />
+
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </h:form>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+
+
+
+
+
+
+
+        <script src="resources/assets/js/jquery.min.js"></script>
+        <!-- bootstrap Framework plugins -->
+        <script src="resources/assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- top menu -->
+        <script src="resources/assets/js/jquery.fademenu.js"></script>
+        <!-- top mobile menu -->
+        <script src="resources/assets/js/selectnav.min.js"></script>
+        <!-- actual width/height of hidden DOM elements -->
+        <script src="resources/assets/js/jquery.actual.min.js"></script>
+        <!-- jquery easing animations -->
+        <script src="resources/assets/js/jquery.easing.1.3.min.js"></script>
+        <!-- power tooltips -->
+        <script src="resources/assets/js/lib/powertip/jquery.powertip-1.1.0.min.js"></script>
+        <!-- date library -->
+        <script src="resources/assets/js/moment.min.js"></script>
+        <!-- common functions -->
+        <script src="resources/assets/js/beoro_common.js"></script>
+
+        <!-- smart wizard -->
+        <script src="resources/assets/js/lib/smart-wizard/js/jquery.smartWizard.min.js"></script>
+
+
+        <script src="resources/assets/js/pages/beoro_wizard.js"></script>
+
+        <script src="resources/assets/js/lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+
+
+
+    </body>
+
+
+</html>
+

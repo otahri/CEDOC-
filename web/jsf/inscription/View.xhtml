@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+
+    <h:head>
+
+        <meta charset="UTF-8"></meta>
+        <title>Doctorant</title>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no"></meta>
+        <link rel="icon" type="../../resources/assets/image/ico" href="favicon.ico"></link>
+
+        <!-- common stylesheets-->
+        <!-- bootstrap framework css -->
+        <link rel="stylesheet" href="../../resources/assets/bootstrap/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="../../resources/assets/bootstrap/css/bootstrap-responsive.min.css"></link>
+        <!-- iconSweet2 icon pack (16x16) -->
+        <link rel="stylesheet" href="../../resources/assets/img/icsw2_16/icsw2_16.css"></link>
+        <!-- splashy icon pack -->
+        <link rel="stylesheet" href="../../resources/assets/img/splashy/splashy.css"></link>
+        <!-- flag icons -->
+        <link rel="stylesheet" href="../../resources/assets/img/flags/flags.css"></link>
+        <!-- power tooltips -->
+        <link rel="stylesheet" href="../../resources/assets/js/lib/powertip/jquery.powertip.css"></link>
+        <!-- google web fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Abel"></link>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"></link>
+
+
+
+        <!-- main stylesheet -->
+        <link rel="stylesheet" href="../../resources/assets/css/beoro.css"></link>
+
+
+
+    </h:head>
+
+    <body class="bg_d">
+
+
+
+
+
+
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span10">
+                    <div class="w-box">
+                        <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
+
+                        <div class="w-box-header">
+                            <h4>Informations doctorant </h4>
+                        </div>
+                        <div class="w-box-content cnt_a user_profile">
+                            <div class="row-fluid">
+
+                                <div class="span10">
+                                    <p class="formSep"><small class="muted">Nom : </small><h:outputText value="#{inscriptionController.selected.idDoctorant.nom}" /></p>
+                                    <p class="formSep"><small class="muted">Prenom :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.prenom}" /></p>
+                                    <p class="formSep"><small class="muted">CIN :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.cin}" /></p>
+                                    <p class="formSep"><small class="muted">CNE :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.cne}" /></p>
+                                    <p class="formSep"><small class="muted">Code :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.code}" /></p>
+
+                                    <p class="formSep"><small class="muted">Sexe :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.sexe}" /></p>
+
+                                    <p class="formSep"><small class="muted">Date de naissance :</small> 
+                                        <h:outputText value="#{inscriptionController.selected.idDoctorant.datenassance}" >
+                                            <f:convertDateTime pattern="MM/dd/yyyy" />
+                                        </h:outputText>
+                                    </p>
+                                    <p class="formSep"><small class="muted">Email1 :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.email1}" /></p>
+                                    <p class="formSep"><small class="muted">Email2 :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.email2}" /></p>
+                                    <p class="formSep"><small class="muted">Tel1 :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.tel1}" /></p>
+                                    <p class="formSep"><small class="muted">Adresse :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.adresse}" /></p>
+                                    <p class="formSep"><small class="muted">Autorisation :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.autorisation}" /></p>
+                                    <p class="formSep"><small class="muted">Emploi :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.employeur}" /></p>
+                                    <p class="formSep"><small class="muted">Lieu emploi :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.lieuemploi}" /></p>
+
+                                    <p class="formSep"><small class="muted">Nationalité :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.idNationalite}" /></p>
+                                    <p class="formSep"><small class="muted">Ville adresse :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.villeadresse}" /></p>
+                                    <p class="formSep"><small class="muted">Ville naissance :</small><h:outputText value="#{inscriptionController.selected.idDoctorant.villenaissance}" /></p>
+
+                                    <p class="formSep"><small class="muted">Session :</small><h:outputText value="#{inscriptionController.selected.session}" /></p>
+                                    <p class="formSep"><small class="muted">Sujet :</small><h:outputText value="#{inscriptionController.selected.sujet}" /></p>
+                                    <p class="formSep"><small class="muted">Soutenance :</small><h:outputText value="#{inscriptionController.selected.soutenance}" /></p>
+                                    <p class="formSep"><small class="muted">Encadrant :</small><h:outputText value="#{inscriptionController.selected.encadrant.nom}" />&nbsp;<h:outputText value="#{inscriptionController.selected.encadrant.prenom}" /></p>
+                                    <p class="formSep"><small class="muted">Coencadrant :</small><h:outputText value="#{inscriptionController.selected.coencadrant.nom}" />&nbsp;<h:outputText value="#{inscriptionController.selected.coencadrant.prenom}" /></p>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-box-header">
+                            <h4>Validation </h4>
+                        </div>
+                        <div class="w-box-content cnt_a user_profile">
+                            <div class="row-fluid">
+                                <div class="span3"></div>
+                                <h:form>
+
+
+                                    <p:selectOneRadio id="console" value="#{inscriptionController.selected.etat}"  >
+                                        <f:selectItem itemLabel="Valide" itemValue="Valide" />
+
+
+                                        <f:selectItem itemLabel="Rejet" itemValue="Rejet" />
+                                        <f:selectItem itemLabel="Abandonnant" itemValue="Abandonnant" />
+                                        <f:selectItem itemLabel="Gradué" itemValue="Gradué" />
+                                    </p:selectOneRadio>
+
+                                    <p:commandButton style="margin-left:90%;" action="#{inscriptionController.update}" value="Valider"   />
+                                </h:form>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,3 @@
+<div class="kc-outer">
+    <iframe name="kcfinder_iframe" id="kcfinder_iframe" src="file_manager/browse.php?type=files" frameborder="0" width="100%" height="100%" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateDoctorantTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_cne}" for="cne" />
+                    <h:inputText id="cne" value="#{doctorantController.selected.cne}" title="#{bundle.CreateDoctorantTitle_cne}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_cin}" for="cin" />
+                    <h:inputText id="cin" value="#{doctorantController.selected.cin}" title="#{bundle.CreateDoctorantTitle_cin}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_nom}" for="nom" />
+                    <h:inputText id="nom" value="#{doctorantController.selected.nom}" title="#{bundle.CreateDoctorantTitle_nom}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_prenom}" for="prenom" />
+                    <h:inputText id="prenom" value="#{doctorantController.selected.prenom}" title="#{bundle.CreateDoctorantTitle_prenom}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_sexe}" for="sexe" />
+                    <h:inputText id="sexe" value="#{doctorantController.selected.sexe}" title="#{bundle.CreateDoctorantTitle_sexe}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_datenassance}" for="datenassance" />
+                    <h:inputText id="datenassance" value="#{doctorantController.selected.datenassance}" title="#{bundle.CreateDoctorantTitle_datenassance}" >
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_salarie}" for="salarie" />
+                    <h:inputText id="salarie" value="#{doctorantController.selected.salarie}" title="#{bundle.CreateDoctorantTitle_salarie}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_email1}" for="email1" />
+                    <h:inputText id="email1" value="#{doctorantController.selected.email1}" title="#{bundle.CreateDoctorantTitle_email1}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_email2}" for="email2" />
+                    <h:inputText id="email2" value="#{doctorantController.selected.email2}" title="#{bundle.CreateDoctorantTitle_email2}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_tel1}" for="tel1" />
+                    <h:inputText id="tel1" value="#{doctorantController.selected.tel1}" title="#{bundle.CreateDoctorantTitle_tel1}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_tel2}" for="tel2" />
+                    <h:inputText id="tel2" value="#{doctorantController.selected.tel2}" title="#{bundle.CreateDoctorantTitle_tel2}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_adresse}" for="adresse" />
+                    <h:inputText id="adresse" value="#{doctorantController.selected.adresse}" title="#{bundle.CreateDoctorantTitle_adresse}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_autorisation}" for="autorisation" />
+                    <h:inputText id="autorisation" value="#{doctorantController.selected.autorisation}" title="#{bundle.CreateDoctorantTitle_autorisation}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_employeur}" for="employeur" />
+                    <h:inputText id="employeur" value="#{doctorantController.selected.employeur}" title="#{bundle.CreateDoctorantTitle_employeur}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_lieuemploi}" for="lieuemploi" />
+                    <h:inputText id="lieuemploi" value="#{doctorantController.selected.lieuemploi}" title="#{bundle.CreateDoctorantTitle_lieuemploi}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_photo}" for="photo" />
+                    <h:inputText id="photo" value="#{doctorantController.selected.photo}" title="#{bundle.CreateDoctorantTitle_photo}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_code}" for="code" />
+                    <h:inputText id="code" value="#{doctorantController.selected.code}" title="#{bundle.CreateDoctorantTitle_code}" />
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_idNationalite}" for="idNationalite" />
+                    <h:selectOneMenu id="idNationalite" value="#{doctorantController.selected.idNationalite}" title="#{bundle.CreateDoctorantTitle_idNationalite}" requiredMessage="#{bundle.CreateDoctorantRequiredMessage_idNationalite}">
+                        <f:selectItems value="#{nationaliteController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_villeEmploi}" for="villeEmploi" />
+                    <h:selectOneMenu id="villeEmploi" value="#{doctorantController.selected.villeEmploi}" title="#{bundle.CreateDoctorantTitle_villeEmploi}"  requiredMessage="#{bundle.CreateDoctorantRequiredMessage_villeEmploi}">
+                        <f:selectItems value="#{villeController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_villeadresse}" for="villeadresse" />
+                    <h:selectOneMenu id="villeadresse" value="#{doctorantController.selected.villeadresse}" title="#{bundle.CreateDoctorantTitle_villeadresse}" requiredMessage="#{bundle.CreateDoctorantRequiredMessage_villeadresse}">
+                        <f:selectItems value="#{villeController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.CreateDoctorantLabel_villenaissance}" for="villenaissance" />
+                    <h:selectOneMenu id="villenaissance" value="#{doctorantController.selected.villenaissance}" title="#{bundle.CreateDoctorantTitle_villenaissance}" requiredMessage="#{bundle.CreateDoctorantRequiredMessage_villenaissance}">
+                        <f:selectItems value="#{villeController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{doctorantController.create}" value="#{bundle.CreateDoctorantSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{doctorantController.prepareList}" value="#{bundle.CreateDoctorantShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreateDoctorantIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

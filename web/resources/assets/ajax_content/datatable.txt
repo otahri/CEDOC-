@@ -1,0 +1,1182 @@
+<table id="dt_ajax" class="table table-striped" style="">
+    <thead>
+        <tr>
+            <th>Team</th>
+            <th>All Olympics</th>
+            <th>Gold</th>
+            <th>Silver</th>
+            <th>Bronze</th>
+            <th>Combined total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a title="Afghanistan at the Olympics" href="http://en.wikipedia.org/wiki/Afghanistan_at_the_Olympics">Afghanistan</a></td>
+            <td>13</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><a title="Algeria at the Olympics" href="http://en.wikipedia.org/wiki/Algeria_at_the_Olympics">Algeria</a></td>
+            <td>15</td>
+            <td>5</td>
+            <td>2</td>
+            <td>8</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td><a title="Argentina at the Olympics" href="http://en.wikipedia.org/wiki/Argentina_at_the_Olympics">Argentina</a></td>
+            <td>40</td>
+            <td>18</td>
+            <td>24</td>
+            <td>28</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td><a title="Armenia at the Olympics" href="http://en.wikipedia.org/wiki/Armenia_at_the_Olympics">Armenia</a></td>
+            <td>10</td>
+            <td>1</td>
+            <td>2</td>
+            <td>9</td>
+            <td>12</td>
+        </tr>
+        <tr>
+        <td><a title="Australasia at the Olympics" href="http://en.wikipedia.org/wiki/Australasia_at_the_Olympics">Australasia</a></td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td><a title="Australia at the Olympics" href="http://en.wikipedia.org/wiki/Australia_at_the_Olympics">Australia</a></td>
+            <td>42</td>
+            <td>143</td>
+            <td>154</td>
+            <td>179</td>
+            <td>476</td>
+        </tr>
+        <tr>
+            <td><a title="Austria at the Olympics" href="http://en.wikipedia.org/wiki/Austria_at_the_Olympics">Austria</a></td>
+            <td>47</td>
+            <td>73</td>
+            <td>103</td>
+            <td>111</td>
+            <td>287</td>
+        </tr>
+        <tr>
+            <td><a title="Azerbaijan at the Olympics" href="http://en.wikipedia.org/wiki/Azerbaijan_at_the_Olympics">Azerbaijan</a></td>
+            <td>9</td>
+            <td>6</td>
+            <td>5</td>
+            <td>15</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td><a title="Bahamas at the Olympics" href="http://en.wikipedia.org/wiki/Bahamas_at_the_Olympics">Bahamas</a></td>
+            <td>15</td>
+            <td>5</td>
+            <td>2</td>
+            <td>5</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td><a title="Bahrain at the Olympics" href="http://en.wikipedia.org/wiki/Bahrain_at_the_Olympics">Bahrain</a></td>
+            <td>8</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Barbados at the Olympics" href="http://en.wikipedia.org/wiki/Barbados_at_the_Olympics">Barbados</a></td>
+            <td>11</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Belarus at the Olympics" href="http://en.wikipedia.org/wiki/Belarus_at_the_Olympics">Belarus</a></td>
+            <td>10</td>
+            <td>13</td>
+            <td>29</td>
+            <td>45</td>
+            <td>87</td>
+        </tr>
+        <tr>
+            <td><a title="Belgium at the Olympics" href="http://en.wikipedia.org/wiki/Belgium_at_the_Olympics">Belgium</a></td>
+            <td>44</td>
+            <td>38</td>
+            <td>53</td>
+            <td>56</td>
+            <td>147</td>
+        </tr>
+        <tr>
+            <td><a title="Bermuda at the Olympics" href="http://en.wikipedia.org/wiki/Bermuda_at_the_Olympics">Bermuda</a></td>
+            <td>23</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Bohemia at the Olympics" href="http://en.wikipedia.org/wiki/Bohemia_at_the_Olympics">Bohemia</a></td>
+            <td>3</td>
+            <td>0</td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><a title="Botswana at the Olympics" href="http://en.wikipedia.org/wiki/Botswana_at_the_Olympics">Botswana</a></td>
+            <td>9</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Brazil at the Olympics" href="http://en.wikipedia.org/wiki/Brazil_at_the_Olympics">Brazil</a></td>
+            <td>27</td>
+            <td>23</td>
+            <td>30</td>
+            <td>55</td>
+            <td>108</td>
+        </tr>
+        <tr>
+            <td><a title="British West Indies at the 1960 Summer Olympics" href="http://en.wikipedia.org/wiki/British_West_Indies_at_the_1960_Summer_Olympics">British West Indies</a></td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><a title="Bulgaria at the Olympics" href="http://en.wikipedia.org/wiki/Bulgaria_at_the_Olympics">Bulgaria</a></td>
+            <td>37</td>
+            <td>52</td>
+            <td>87</td>
+            <td>81</td>
+            <td>220</td>
+        </tr>
+        <tr>
+            <td><a title="Burundi at the Olympics" href="http://en.wikipedia.org/wiki/Burundi_at_the_Olympics">Burundi</a></td>
+            <td>5</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Cameroon at the Olympics" href="http://en.wikipedia.org/wiki/Cameroon_at_the_Olympics">Cameroon</a></td>
+            <td>14</td>
+            <td>3</td>
+            <td>1</td>
+            <td>1</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td><a title="Canada at the Olympics" href="http://en.wikipedia.org/wiki/Canada_at_the_Olympics">Canada</a></td>
+            <td>46</td>
+            <td>111</td>
+            <td>144</td>
+            <td>168</td>
+            <td>423</td>
+        </tr>
+        <tr>
+            <td><a title="Chile at the Olympics" href="http://en.wikipedia.org/wiki/Chile_at_the_Olympics">Chile</a></td>
+            <td>37</td>
+            <td>2</td>
+            <td>7</td>
+            <td>4</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td><a title="China at the Olympics" href="http://en.wikipedia.org/wiki/China_at_the_Olympics">China</a></td>
+            <td>18</td>
+            <td>210</td>
+            <td>162</td>
+            <td>145</td>
+            <td>517</td>
+        </tr>
+        <tr>
+            <td><a title="Chinese Taipei at the Olympics" href="http://en.wikipedia.org/wiki/Chinese_Taipei_at_the_Olympics">Chinese Taipei</a></td>
+            <td>26</td>
+            <td>2</td>
+            <td>7</td>
+            <td>12</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td><a title="Colombia at the Olympics" href="http://en.wikipedia.org/wiki/Colombia_at_the_Olympics">Colombia</a></td>
+            <td>19</td>
+            <td>2</td>
+            <td>6</td>
+            <td>11</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td><a title="Costa Rica at the Olympics" href="http://en.wikipedia.org/wiki/Costa_Rica_at_the_Olympics">Costa Rica</a></td>
+            <td>20</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><a title="Côte d'Ivoire at the Olympics" href="http://en.wikipedia.org/wiki/C%C3%B4te_d%27Ivoire_at_the_Olympics">Côte d'Ivoire</a></td>
+            <td>12</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Croatia at the Olympics" href="http://en.wikipedia.org/wiki/Croatia_at_the_Olympics">Croatia</a></td>
+            <td>12</td>
+            <td>10</td>
+            <td>12</td>
+            <td>11</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td><a title="Cuba at the Olympics" href="http://en.wikipedia.org/wiki/Cuba_at_the_Olympics">Cuba</a></td>
+            <td>19</td>
+            <td>72</td>
+            <td>67</td>
+            <td>69</td>
+            <td>208</td>
+        </tr>
+        <tr>
+            <td><a title="Cyprus at the Olympics" href="http://en.wikipedia.org/wiki/Cyprus_at_the_Olympics">Cyprus</a></td>
+            <td>18</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Czech Republic at the Olympics" href="http://en.wikipedia.org/wiki/Czech_Republic_at_the_Olympics">Czech Republic</a></td>
+            <td>10</td>
+            <td>19</td>
+            <td>20</td>
+            <td>20</td>
+            <td>59</td>
+        </tr>
+        <tr>
+            <td><a title="Czechoslovakia at the Olympics" href="http://en.wikipedia.org/wiki/Czechoslovakia_at_the_Olympics">Czechoslovakia</a></td>
+            <td>32</td>
+            <td>51</td>
+            <td>57</td>
+            <td>60</td>
+            <td>168</td>
+        </tr>
+        <tr>
+            <td><a title="Denmark at the Olympics" href="http://en.wikipedia.org/wiki/Denmark_at_the_Olympics">Denmark</a></td>
+            <td>38</td>
+            <td>43</td>
+            <td>68</td>
+            <td>69</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <td><a title="Djibouti at the Olympics" href="http://en.wikipedia.org/wiki/Djibouti_at_the_Olympics">Djibouti</a></td>
+            <td>8</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Dominican Republic at the Olympics" href="http://en.wikipedia.org/wiki/Dominican_Republic_at_the_Olympics">Dominican Republic</a></td>
+            <td>13</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><a title="East Germany at the Olympics" href="http://en.wikipedia.org/wiki/East_Germany_at_the_Olympics">East Germany</a></td>
+            <td>11</td>
+            <td>192</td>
+            <td>165</td>
+            <td>162</td>
+            <td>519</td>
+        </tr>
+        <tr>
+            <td><a title="Ecuador at the Olympics" href="http://en.wikipedia.org/wiki/Ecuador_at_the_Olympics">Ecuador</a></td>
+            <td>13</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><a title="Egypt at the Olympics" href="http://en.wikipedia.org/wiki/Egypt_at_the_Olympics">Egypt</a></td>
+            <td>22</td>
+            <td>7</td>
+            <td>9</td>
+            <td>10</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td><a title="Eritrea at the Olympics" href="http://en.wikipedia.org/wiki/Eritrea_at_the_Olympics">Eritrea</a></td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Estonia at the Olympics" href="http://en.wikipedia.org/wiki/Estonia_at_the_Olympics">Estonia</a></td>
+            <td>19</td>
+            <td>13</td>
+            <td>11</td>
+            <td>16</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td><a title="Ethiopia at the Olympics" href="http://en.wikipedia.org/wiki/Ethiopia_at_the_Olympics">Ethiopia</a></td>
+            <td>14</td>
+            <td>21</td>
+            <td>7</td>
+            <td>17</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td><a title="Finland at the Olympics" href="http://en.wikipedia.org/wiki/Finland_at_the_Olympics">Finland</a></td>
+            <td>45</td>
+            <td>142</td>
+            <td>143</td>
+            <td>173</td>
+            <td>458</td>
+        </tr>
+        <tr>
+            <td><a title="France at the Olympics" href="http://en.wikipedia.org/wiki/France_at_the_Olympics">France</a></td>
+            <td>48</td>
+            <td>229</td>
+            <td>250</td>
+            <td>286</td>
+            <td>765</td>
+        </tr>
+        <tr>
+            <td><a title="Gabon at the Olympics" href="http://en.wikipedia.org/wiki/Gabon_at_the_Olympics">Gabon</a></td>
+            <td>9</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Georgia at the Olympics" href="http://en.wikipedia.org/wiki/Georgia_at_the_Olympics">Georgia</a></td>
+            <td>10</td>
+            <td>6</td>
+            <td>5</td>
+            <td>14</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td><a title="Germany at the Olympics" href="http://en.wikipedia.org/wiki/Germany_at_the_Olympics">Germany</a></td>
+            <td>25</td>
+            <td>244</td>
+            <td>254</td>
+            <td>265</td>
+            <td>763</td>
+        </tr>
+        <tr>
+            <td><a title="Ghana at the Olympics" href="http://en.wikipedia.org/wiki/Ghana_at_the_Olympics">Ghana</a></td>
+            <td>14</td>
+            <td>0</td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><a title="Great Britain at the Olympics" href="http://en.wikipedia.org/wiki/Great_Britain_at_the_Olympics">Great Britain</a></td>
+            <td>48</td>
+            <td>245</td>
+            <td>275</td>
+            <td>282</td>
+            <td>802</td>
+        </tr>
+        <tr>
+            <td><a title="Greece at the Olympics" href="http://en.wikipedia.org/wiki/Greece_at_the_Olympics">Greece</a></td>
+            <td>44</td>
+            <td>30</td>
+            <td>42</td>
+            <td>38</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td><a title="Grenada at the Olympics" href="http://en.wikipedia.org/wiki/Grenada_at_the_Olympics">Grenada</a></td>
+            <td>8</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Guatemala at the Olympics" href="http://en.wikipedia.org/wiki/Guatemala_at_the_Olympics">Guatemala</a></td>
+            <td>14</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Guyana at the Olympics" href="http://en.wikipedia.org/wiki/Guyana_at_the_Olympics">Guyana</a></td>
+            <td>16</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Haiti at the Olympics" href="http://en.wikipedia.org/wiki/Haiti_at_the_Olympics">Haiti</a></td>
+            <td>15</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><a title="Hong Kong at the Olympics" href="http://en.wikipedia.org/wiki/Hong_Kong_at_the_Olympics">Hong Kong</a></td>
+            <td>18</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><a title="Hungary at the Olympics" href="http://en.wikipedia.org/wiki/Hungary_at_the_Olympics">Hungary</a></td>
+            <td>46</td>
+            <td>167</td>
+            <td>146</td>
+            <td>168</td>
+            <td>481</td>
+        </tr>
+        <tr>
+            <td><a title="Iceland at the Olympics" href="http://en.wikipedia.org/wiki/Iceland_at_the_Olympics">Iceland</a></td>
+            <td>35</td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><a title="India at the Olympics" href="http://en.wikipedia.org/wiki/India_at_the_Olympics">India</a></td>
+            <td>31</td>
+            <td>9</td>
+            <td>6</td>
+            <td>11</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td><a title="Indonesia at the Olympics" href="http://en.wikipedia.org/wiki/Indonesia_at_the_Olympics">Indonesia</a></td>
+            <td>14</td>
+            <td>6</td>
+            <td>10</td>
+            <td>11</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td><a title="Iran at the Olympics" href="http://en.wikipedia.org/wiki/Iran_at_the_Olympics">Iran</a></td>
+            <td>25</td>
+            <td>15</td>
+            <td>20</td>
+            <td>25</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td><a title="Iraq at the Olympics" href="http://en.wikipedia.org/wiki/Iraq_at_the_Olympics">Iraq</a></td>
+            <td>13</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Ireland at the Olympics" href="http://en.wikipedia.org/wiki/Ireland_at_the_Olympics">Ireland</a></td>
+            <td>25</td>
+            <td>9</td>
+            <td>8</td>
+            <td>11</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td><a title="Israel at the Olympics" href="http://en.wikipedia.org/wiki/Israel_at_the_Olympics">Israel</a></td>
+            <td>20</td>
+            <td>1</td>
+            <td>1</td>
+            <td>5</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td><a title="Italy at the Olympics" href="http://en.wikipedia.org/wiki/Italy_at_the_Olympics">Italy</a></td>
+            <td>47</td>
+            <td>235</td>
+            <td>198</td>
+            <td>222</td>
+            <td>655</td>
+        </tr>
+        <tr>
+            <td><a title="Jamaica at the Olympics" href="http://en.wikipedia.org/wiki/Jamaica_at_the_Olympics">Jamaica</a></td>
+            <td>22</td>
+            <td>17</td>
+            <td>29</td>
+            <td>21</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <td><a title="Japan at the Olympics" href="http://en.wikipedia.org/wiki/Japan_at_the_Olympics">Japan</a></td>
+            <td>40</td>
+            <td>139</td>
+            <td>139</td>
+            <td>157</td>
+            <td>435</td>
+        </tr>
+        <tr>
+            <td><a title="Kazakhstan at the Olympics" href="http://en.wikipedia.org/wiki/Kazakhstan_at_the_Olympics">Kazakhstan</a></td>
+            <td>10</td>
+            <td>17</td>
+            <td>20</td>
+            <td>21</td>
+            <td>58</td>
+        </tr>
+        <tr>
+            <td><a title="Kenya at the Olympics" href="http://en.wikipedia.org/wiki/Kenya_at_the_Olympics">Kenya</a></td>
+            <td>16</td>
+            <td>25</td>
+            <td>32</td>
+            <td>29</td>
+            <td>86</td>
+        </tr>
+        <tr>
+            <td><a title="North Korea at the Olympics" href="http://en.wikipedia.org/wiki/North_Korea_at_the_Olympics">North Korea</a></td>
+            <td>17</td>
+            <td>14</td>
+            <td>13</td>
+            <td>22</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <td><a title="South Korea at the Olympics" href="http://en.wikipedia.org/wiki/South_Korea_at_the_Olympics">South Korea</a></td>
+            <td>32</td>
+            <td>104</td>
+            <td>96</td>
+            <td>88</td>
+            <td>288</td>
+        </tr>
+        <tr>
+            <td><a title="Kuwait at the Olympics" href="http://en.wikipedia.org/wiki/Kuwait_at_the_Olympics">Kuwait</a></td>
+            <td>12</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><a title="Kyrgyzstan at the Olympics" href="http://en.wikipedia.org/wiki/Kyrgyzstan_at_the_Olympics">Kyrgyzstan</a></td>
+            <td>10</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><a title="Latvia at the Olympics" href="http://en.wikipedia.org/wiki/Latvia_at_the_Olympics">Latvia</a></td>
+            <td>19</td>
+            <td>3</td>
+            <td>13</td>
+            <td>6</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td><a title="Lebanon at the Olympics" href="http://en.wikipedia.org/wiki/Lebanon_at_the_Olympics">Lebanon</a></td>
+            <td>31</td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><a title="Liechtenstein at the Olympics" href="http://en.wikipedia.org/wiki/Liechtenstein_at_the_Olympics">Liechtenstein</a></td>
+            <td>33</td>
+            <td>2</td>
+            <td>2</td>
+            <td>5</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td><a title="Lithuania at the Olympics" href="http://en.wikipedia.org/wiki/Lithuania_at_the_Olympics">Lithuania</a></td>
+            <td>15</td>
+            <td>6</td>
+            <td>5</td>
+            <td>10</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td><a title="Luxembourg at the Olympics" href="http://en.wikipedia.org/wiki/Luxembourg_at_the_Olympics">Luxembourg</a></td>
+            <td>29</td>
+            <td>1</td>
+            <td>3</td>
+            <td>0</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><a title="Macedonia at the Olympics" href="http://en.wikipedia.org/wiki/Macedonia_at_the_Olympics">Macedonia</a></td>
+            <td>9</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Malaysia at the Olympics" href="http://en.wikipedia.org/wiki/Malaysia_at_the_Olympics">Malaysia</a></td>
+            <td>14</td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><a title="Mauritius at the Olympics" href="http://en.wikipedia.org/wiki/Mauritius_at_the_Olympics">Mauritius</a></td>
+            <td>8</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Mexico at the Olympics" href="http://en.wikipedia.org/wiki/Mexico_at_the_Olympics">Mexico</a></td>
+            <td>29</td>
+            <td>13</td>
+            <td>21</td>
+            <td>28</td>
+            <td>62</td>
+        </tr>
+        <tr>
+            <td><a title="Moldova at the Olympics" href="http://en.wikipedia.org/wiki/Moldova_at_the_Olympics">Moldova</a></td>
+            <td>10</td>
+            <td>0</td>
+            <td>2</td>
+            <td>5</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td><a title="Mongolia at the Olympics" href="http://en.wikipedia.org/wiki/Mongolia_at_the_Olympics">Mongolia</a></td>
+            <td>24</td>
+            <td>2</td>
+            <td>9</td>
+            <td>13</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td><a title="Montenegro at the Olympics" href="http://en.wikipedia.org/wiki/Montenegro_at_the_Olympics">Montenegro</a></td>
+            <td>3</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Morocco at the Olympics" href="http://en.wikipedia.org/wiki/Morocco_at_the_Olympics">Morocco</a></td>
+            <td>18</td>
+            <td>6</td>
+            <td>5</td>
+            <td>11</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td><a title="Mozambique at the Olympics" href="http://en.wikipedia.org/wiki/Mozambique_at_the_Olympics">Mozambique</a></td>
+            <td>9</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><a title="Namibia at the Olympics" href="http://en.wikipedia.org/wiki/Namibia_at_the_Olympics">Namibia</a></td>
+            <td>6</td>
+            <td>0</td>
+            <td>4</td>
+            <td>0</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><a title="Netherlands at the Olympics" href="http://en.wikipedia.org/wiki/Netherlands_at_the_Olympics">Netherlands</a></td>
+            <td>44</td>
+            <td>106</td>
+            <td>116</td>
+            <td>130</td>
+            <td>352</td>
+        </tr>
+        <tr>
+            <td><a title="Netherlands Antilles at the Olympics" href="http://en.wikipedia.org/wiki/Netherlands_Antilles_at_the_Olympics">Netherlands Antilles</a></td>
+            <td>15</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="New Zealand at the Olympics" href="http://en.wikipedia.org/wiki/New_Zealand_at_the_Olympics">New Zealand</a></td>
+            <td>36</td>
+            <td>42</td>
+            <td>19</td>
+            <td>39</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td><a title="Niger at the Olympics" href="http://en.wikipedia.org/wiki/Niger_at_the_Olympics">Niger</a></td>
+            <td>11</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Nigeria at the Olympics" href="http://en.wikipedia.org/wiki/Nigeria_at_the_Olympics">Nigeria</a></td>
+            <td>15</td>
+            <td>3</td>
+            <td>8</td>
+            <td>12</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td><a title="Norway at the Olympics" href="http://en.wikipedia.org/wiki/Norway_at_the_Olympics">Norway</a></td>
+            <td>45</td>
+            <td>163</td>
+            <td>155</td>
+            <td>133</td>
+            <td>451</td>
+        </tr>
+        <tr>
+            <td><a title="Pakistan at the Olympics" href="http://en.wikipedia.org/wiki/Pakistan_at_the_Olympics">Pakistan</a></td>
+            <td>17</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td><a title="Panama at the Olympics" href="http://en.wikipedia.org/wiki/Panama_at_the_Olympics">Panama</a></td>
+            <td>16</td>
+            <td>1</td>
+            <td>0</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><a title="Paraguay at the Olympics" href="http://en.wikipedia.org/wiki/Paraguay_at_the_Olympics">Paraguay</a></td>
+            <td>11</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Peru at the Olympics" href="http://en.wikipedia.org/wiki/Peru_at_the_Olympics">Peru</a></td>
+            <td>18</td>
+            <td>1</td>
+            <td>3</td>
+            <td>0</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><a title="Philippines at the Olympics" href="http://en.wikipedia.org/wiki/Philippines_at_the_Olympics">Philippines</a></td>
+            <td>23</td>
+            <td>0</td>
+            <td>2</td>
+            <td>7</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td><a title="Poland at the Olympics" href="http://en.wikipedia.org/wiki/Poland_at_the_Olympics">Poland</a></td>
+            <td>41</td>
+            <td>66</td>
+            <td>88</td>
+            <td>131</td>
+            <td>285</td>
+        </tr>
+        <tr>
+            <td><a title="Portugal at the Olympics" href="http://en.wikipedia.org/wiki/Portugal_at_the_Olympics">Portugal</a></td>
+            <td>29</td>
+            <td>4</td>
+            <td>8</td>
+            <td>11</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td><a title="Puerto Rico at the Olympics" href="http://en.wikipedia.org/wiki/Puerto_Rico_at_the_Olympics">Puerto Rico</a></td>
+            <td>23</td>
+            <td>0</td>
+            <td>2</td>
+            <td>6</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td><a title="Qatar at the Olympics" href="http://en.wikipedia.org/wiki/Qatar_at_the_Olympics">Qatar</a></td>
+            <td>8</td>
+            <td>0</td>
+            <td>0</td>
+            <td>4</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><a title="Romania at the Olympics" href="http://en.wikipedia.org/wiki/Romania_at_the_Olympics">Romania</a></td>
+            <td>39</td>
+            <td>88</td>
+            <td>94</td>
+            <td>120</td>
+            <td>302</td>
+        </tr>
+        <tr>
+            <td><a title="Russia at the Olympics" href="http://en.wikipedia.org/wiki/Russia_at_the_Olympics">Russia</a></td>
+            <td>10</td>
+            <td>169</td>
+            <td>151</td>
+            <td>170</td>
+            <td>490</td>
+        </tr>
+        <tr>
+            <td><a title="Russian Empire at the Olympics" href="http://en.wikipedia.org/wiki/Russian_Empire_at_the_Olympics">Russian Empire</a></td>
+            <td>3</td>
+            <td>1</td>
+            <td>4</td>
+            <td>3</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td><a title="Saudi Arabia at the Olympics" href="http://en.wikipedia.org/wiki/Saudi_Arabia_at_the_Olympics">Saudi Arabia</a></td>
+            <td>10</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><a title="Senegal at the Olympics" href="http://en.wikipedia.org/wiki/Senegal_at_the_Olympics">Senegal</a></td>
+            <td>18</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Serbia at the Olympics" href="http://en.wikipedia.org/wiki/Serbia_at_the_Olympics">Serbia</a></td>
+            <td>4</td>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td><a title="Serbia and Montenegro at the Olympics" href="http://en.wikipedia.org/wiki/Serbia_and_Montenegro_at_the_Olympics">Serbia and Montenegro</a></td>
+            <td>6</td>
+            <td>2</td>
+            <td>4</td>
+            <td>3</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td><a title="Singapore at the Olympics" href="http://en.wikipedia.org/wiki/Singapore_at_the_Olympics">Singapore</a></td>
+            <td>15</td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><a title="Slovakia at the Olympics" href="http://en.wikipedia.org/wiki/Slovakia_at_the_Olympics">Slovakia</a></td>
+            <td>10</td>
+            <td>8</td>
+            <td>11</td>
+            <td>9</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td><a title="Slovenia at the Olympics" href="http://en.wikipedia.org/wiki/Slovenia_at_the_Olympics">Slovenia</a></td>
+            <td>12</td>
+            <td>4</td>
+            <td>8</td>
+            <td>14</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td><a title="South Africa at the Olympics" href="http://en.wikipedia.org/wiki/South_Africa_at_the_Olympics">South Africa</a></td>
+            <td>24</td>
+            <td>23</td>
+            <td>26</td>
+            <td>27</td>
+            <td>76</td>
+        </tr>
+        <tr>
+            <td><a title="Soviet Union at the Olympics" href="http://en.wikipedia.org/wiki/Soviet_Union_at_the_Olympics">Soviet Union</a></td>
+            <td>18</td>
+            <td>473</td>
+            <td>376</td>
+            <td>355</td>
+            <td>1204</td>
+        </tr>
+        <tr>
+            <td><a title="Unified Team at the Olympics" href="http://en.wikipedia.org/wiki/Unified_Team_at_the_Olympics">Unified Team</a></td>
+            <td>2</td>
+            <td>54</td>
+            <td>44</td>
+            <td>37</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <td><a title="Spain at the Olympics" href="http://en.wikipedia.org/wiki/Spain_at_the_Olympics">Spain</a></td>
+            <td>40</td>
+            <td>38</td>
+            <td>59</td>
+            <td>35</td>
+            <td>132</td>
+        </tr>
+        <tr>
+            <td><a title="Sri Lanka at the Olympics" href="http://en.wikipedia.org/wiki/Sri_Lanka_at_the_Olympics">Sri Lanka</a></td>
+            <td>16</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><a title="Sudan at the Olympics" href="http://en.wikipedia.org/wiki/Sudan_at_the_Olympics">Sudan</a></td>
+            <td>11</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Suriname at the Olympics" href="http://en.wikipedia.org/wiki/Suriname_at_the_Olympics">Suriname</a></td>
+            <td>12</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><a title="Sweden at the Olympics" href="http://en.wikipedia.org/wiki/Sweden_at_the_Olympics">Sweden</a></td>
+            <td>47</td>
+            <td>191</td>
+            <td>197</td>
+            <td>224</td>
+            <td>612</td>
+        </tr>
+        <tr>
+            <td><a title="Switzerland at the Olympics" href="http://en.wikipedia.org/wiki/Switzerland_at_the_Olympics">Switzerland</a></td>
+            <td>48</td>
+            <td>91</td>
+            <td>110</td>
+            <td>111</td>
+            <td>312</td>
+        </tr>
+        <tr>
+            <td><a title="Syria at the Olympics" href="http://en.wikipedia.org/wiki/Syria_at_the_Olympics">Syria</a></td>
+            <td>12</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><a title="Tajikistan at the Olympics" href="http://en.wikipedia.org/wiki/Tajikistan_at_the_Olympics">Tajikistan</a></td>
+            <td>8</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><a title="Tanzania at the Olympics" href="http://en.wikipedia.org/wiki/Tanzania_at_the_Olympics">Tanzania</a></td>
+            <td>12</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><a title="Thailand at the Olympics" href="http://en.wikipedia.org/wiki/Thailand_at_the_Olympics">Thailand</a></td>
+            <td>17</td>
+            <td>7</td>
+            <td>6</td>
+            <td>11</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td><a title="Togo at the Olympics" href="http://en.wikipedia.org/wiki/Togo_at_the_Olympics">Togo</a></td>
+            <td>9</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Tonga at the Olympics" href="http://en.wikipedia.org/wiki/Tonga_at_the_Olympics">Tonga</a></td>
+            <td>8</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="Trinidad and Tobago at the Olympics" href="http://en.wikipedia.org/wiki/Trinidad_and_Tobago_at_the_Olympics">Trinidad and Tobago</a></td>
+            <td>19</td>
+            <td>2</td>
+            <td>5</td>
+            <td>11</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td><a title="Tunisia at the Olympics" href="http://en.wikipedia.org/wiki/Tunisia_at_the_Olympics">Tunisia</a></td>
+            <td>13</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td><a title="Turkey at the Olympics" href="http://en.wikipedia.org/wiki/Turkey_at_the_Olympics">Turkey</a></td>
+            <td>36</td>
+            <td>39</td>
+            <td>25</td>
+            <td>23</td>
+            <td>87</td>
+        </tr>
+        <tr>
+            <td><a title="Uganda at the Olympics" href="http://en.wikipedia.org/wiki/Uganda_at_the_Olympics">Uganda</a></td>
+            <td>14</td>
+            <td>2</td>
+            <td>3</td>
+            <td>2</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td><a title="Ukraine at the Olympics" href="http://en.wikipedia.org/wiki/Ukraine_at_the_Olympics">Ukraine</a></td>
+            <td>10</td>
+            <td>35</td>
+            <td>28</td>
+            <td>58</td>
+            <td>121</td>
+        </tr>
+        <tr>
+            <td><a class="mw-redirect" title="Unified Team of Germany at the Olympics" href="http://en.wikipedia.org/wiki/Unified_Team_of_Germany_at_the_Olympics">Unified Team of Germany</a></td>
+            <td>6</td>
+            <td>36</td>
+            <td>60</td>
+            <td>41</td>
+            <td>137</td>
+        </tr>
+        <tr>
+            <td><a title="United Arab Emirates at the Olympics" href="http://en.wikipedia.org/wiki/United_Arab_Emirates_at_the_Olympics">United Arab Emirates</a></td>
+            <td>8</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="United States at the Olympics" href="http://en.wikipedia.org/wiki/United_States_at_the_Olympics">United States</a></td>
+            <td>47</td>
+            <td>1062</td>
+            <td>854</td>
+            <td>738</td>
+            <td>2654</td>
+        </tr>
+        <tr>
+            <td><a title="Uruguay at the Olympics" href="http://en.wikipedia.org/wiki/Uruguay_at_the_Olympics">Uruguay</a></td>
+            <td>21</td>
+            <td>2</td>
+            <td>2</td>
+            <td>6</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td><a title="Uzbekistan at the Olympics" href="http://en.wikipedia.org/wiki/Uzbekistan_at_the_Olympics">Uzbekistan</a></td>
+            <td>10</td>
+            <td>6</td>
+            <td>5</td>
+            <td>11</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td><a title="Venezuela at the Olympics" href="http://en.wikipedia.org/wiki/Venezuela_at_the_Olympics">Venezuela</a></td>
+            <td>20</td>
+            <td>2</td>
+            <td>2</td>
+            <td>8</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td><a title="Vietnam at the Olympics" href="http://en.wikipedia.org/wiki/Vietnam_at_the_Olympics">Vietnam</a></td>
+            <td>14</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><a title="Virgin Islands at the Olympics" href="http://en.wikipedia.org/wiki/Virgin_Islands_at_the_Olympics">Virgin Islands</a></td>
+            <td>18</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><a title="West Germany at the Olympics" href="http://en.wikipedia.org/wiki/West_Germany_at_the_Olympics">West Germany</a></td>
+            <td>11</td>
+            <td>67</td>
+            <td>82</td>
+            <td>94</td>
+            <td>243</td>
+        </tr>
+        <tr>
+            <td><a title="Yugoslavia at the Olympics" href="http://en.wikipedia.org/wiki/Yugoslavia_at_the_Olympics">Yugoslavia</a></td>
+            <td>30</td>
+            <td>26</td>
+            <td>32</td>
+            <td>29</td>
+            <td>87</td>
+        </tr>
+        <tr>
+            <td><a title="Independent Olympic Participants at the 1992 Summer Olympics" href="http://en.wikipedia.org/wiki/Independent_Olympic_Participants_at_the_1992_Summer_Olympics">Independent Olympic Participants</a></td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><a title="Zambia at the Olympics" href="http://en.wikipedia.org/wiki/Zambia_at_the_Olympics">Zambia</a></td>
+            <td>11</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><a title="Zimbabwe at the Olympics" href="http://en.wikipedia.org/wiki/Zimbabwe_at_the_Olympics">Zimbabwe</a></td>
+            <td>9</td>
+            <td>3</td>
+            <td>4</td>
+            <td>1</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td><a title="Mixed team at the Olympics" href="http://en.wikipedia.org/wiki/Mixed_team_at_the_Olympics">Mixed team</a></td>
+            <td>3</td>
+            <td>8</td>
+            <td>5</td>
+            <td>4</td>
+            <td>17</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+
+
+    <h:head>
+
+        <meta charset="UTF-8"></meta>
+        <title>Liste des professuers</title>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no"></meta>
+        <link rel="icon" type="../../resources/assets/image/ico" href="favicon.ico"></link>
+
+        <!-- common stylesheets-->
+        <!-- bootstrap framework css -->
+        <link rel="stylesheet" href="../../resources/assets/bootstrap/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="../../resources/assets/bootstrap/css/bootstrap-responsive.min.css"></link>
+        <!-- iconSweet2 icon pack (16x16) -->
+        <link rel="stylesheet" href="../../resources/assets/img/icsw2_16/icsw2_16.css"></link>
+        <!-- splashy icon pack -->
+        <link rel="stylesheet" href="../../resources/assets/img/splashy/splashy.css"></link>
+        <!-- flag icons -->
+        <link rel="stylesheet" href="../../resources/assets/img/flags/flags.css"></link>
+        <!-- power tooltips -->
+        <link rel="stylesheet" href="../../resources/assets/js/lib/powertip/jquery.powertip.css"></link>
+        <!-- google web fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Abel"></link>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"></link>
+
+        <!-- aditional stylesheets -->
+        <!-- enchanced select box, tag handler -->
+        <link rel="stylesheet" href="../../resources/assets/js/lib/select2/select2.css"></link>
+        <!-- datepicker -->
+        <link rel="stylesheet" href="../../resources/assets/js/lib/bootstrap-datepicker/css/datepicker.css"></link>
+
+
+        <!-- main stylesheet -->
+        <link rel="stylesheet" href="../../resources/assets/css/beoro.css"></link>
+
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css"><![endif]-->
+        <!--[if IE 9]><link rel="stylesheet" href="css/ie9.css"><![endif]-->
+
+        <!--[if lt IE 9]>
+            <script src="js/ie/html5shiv.min.js"></script>
+            <script src="js/ie/respond.min.js"></script>
+            <script src="js/lib/flot-charts/excanvas.min.js"></script>
+        <![endif]-->
+
+    </h:head>
+
+    <body class="bg_d">
+        <!-- main wrapper (without footer) -->    
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="pull-right top-search" style="padding-button:20px;">                          
+                        <h:form><p:commandLink action="#{loginBean.logout}" value="Se deconnecter"  ajax="false"/></h:form>                          							
+
+                    </div>						
+                    <div class="pull-right top-search" style="padding-right:20px;">
+
+                    </div>
+
+
+                      <div id="fade-menu" class="pull-left">
+                        <ul class="clearfix" id="mobile-nav">
+                            <li>
+                                <a href="../../index.xhtml">Accueil</a>
+                            </li>
+                            <li><a href="javascript:void(0)">Structure</a>
+                                <ul>
+                                    <li>
+                                        <a href="../laboratoire/List.xhtml">Laboratoirs</a>
+                                    </li>
+                                    <li>
+                                        <a href="../equipe/List.xhtml">Equipes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">professeurs encadrants</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <c:if test="#{loginBean.role=='secretaire' }" >
+                                <li>
+                                    <a href="javascript:void(0)">Parametrage</a>
+                                    <ul>
+                                        <li>
+                                            <a href="../parametre/Create.xhtml">Ajout des donnees</a>
+                                        </li>
+                                        <li>
+                                            <a href="../parametre/Affecter_prof.xhtml">Affectation </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </c:if>
+                            <c:if test="#{loginBean.role=='Doctorant' }" >
+                                <li>
+                                    <a href="#">Inscription</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Consulter les Pièces</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../inscription.xhtml">S'inscrire</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </c:if>
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ul id="breadcrumbs">
+                <li><a href="../../index.xhtml"><i class="icon-home"></i></a></li>
+                <li><span>Professeurs</span></li>
+            </ul>
+        </div>  
+
+        <!--main content-->
+
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="w-box w-box-blue">
+                        <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
+
+                        <div class="w-box-header">
+                            Liste des professeurs
+                        </div>
+
+                        <div class="w-box-content cnt_a">
+
+
+
+                            <h:form >
+
+                                <h:outputText escape="false" value="#{bundle.ListProfesseurEmpty}" rendered="#{professeurController.items.rowCount == 0}"/>
+                                <h:panelGroup rendered="#{professeurController.items.rowCount > 0}">
+                                    <h:commandLink action="#{professeurController.previous}" value="#{bundle.Previous} #{professeurController.pagination.pageSize}" rendered="#{professeurController.pagination.hasPreviousPage}"/>&nbsp;
+                                    <h:commandLink action="#{professeurController.next}" value="#{bundle.Next} #{professeurController.pagination.pageSize}" rendered="#{professeurController.pagination.hasNextPage}"/>&nbsp;
+                                    <h:dataTable value="#{professeurController.items}" var="item"  id="table-stacking-simple" class="table stackable">
+
+                                        <h:column>
+                                            <f:facet name="header">
+                                                <h:outputText value="#{bundle.ListProfesseurTitle_nom}"/>
+                                            </f:facet>
+                                            <h:outputText value="#{item.nom}"/>
+                                        </h:column>
+                                        <h:column>
+                                            <f:facet name="header">
+                                                <h:outputText value="#{bundle.ListProfesseurTitle_prenom}"/>
+                                            </f:facet>
+                                            <h:outputText value="#{item.prenom}"/>
+                                        </h:column>
+                                        <h:column>
+                                            <f:facet name="header">
+                                                <h:outputText value="#{bundle.ListProfesseurTitle_specialite}"/>
+                                            </f:facet>
+                                            <h:outputText value="#{item.specialite}"/>
+                                        </h:column>
+                                        <h:column>
+                                            <f:facet name="header">
+                                                <h:outputText value="#{bundle.ListProfesseurTitle_email}"/>
+                                            </f:facet>
+                                            <a href="mailto:#{item.email}" ><h:outputText value="#{item.email}"/></a>
+                                        </h:column>
+                                        <h:column>
+                                            <f:facet name="header">
+                                                <h:outputText value="#{bundle.ListProfesseurTitle_departement}"/>
+                                            </f:facet>
+                                            <h:outputText value="#{item.departement}"/>
+                                        </h:column>
+                                        <h:column>
+                                            <f:facet name="header">
+                                                <h:outputText value="#{bundle.ListProfesseurTitle_tel}"/>
+                                            </f:facet>
+                                            <h:outputText value="#{item.tel}"/>
+                                        </h:column>
+
+
+                                        <h:column>
+                                            <f:facet name="header">
+                                                <h:outputText value="Etablissement"/>
+                                            </f:facet>
+                                            <h:outputText value="#{item.idEtablissement.nom}"/>
+                                        </h:column>
+                                        <c:if test="#{loginBean.role=='secretaire' }"   >
+                                        <h:column>
+                                            <f:facet name="header">
+                                                <h:outputText value="Options"/>
+                                            </f:facet>
+
+                                            <h:commandLink action="#{professeurController.prepareEdit}"> <i class="icon-pencil"></i> </h:commandLink>
+                                            <h:commandLink action="#{professeurController.destroy}"> <i class="icon-trash"></i> </h:commandLink>
+                                        </h:column>
+                                        </c:if>
+                                    </h:dataTable>
+                                </h:panelGroup>
+
+                            </h:form>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Common JS -->
+        <!-- jQuery framework -->
+        <script src="../../resources/assets/js/jquery.min.js"></script>
+        <!-- bootstrap Framework plugins -->
+        <script src="../../resources/assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- top menu -->
+        <script src="../../resources/assets/js/jquery.fademenu.js"></script>
+        <!-- top mobile menu -->
+        <script src="../../resources/assets/js/selectnav.min.js"></script>
+        <!-- actual width/height of hidden DOM elements -->
+        <script src="../../resources/assets/js/jquery.actual.min.js"></script>
+        <!-- jquery easing animations -->
+        <script src="../../resources/assets/js/jquery.easing.1.3.min.js"></script>
+        <!-- power tooltips -->
+        <script src="../../resources/assets/js/lib/powertip/jquery.powertip-1.1.0.min.js"></script>
+        <!-- date library -->
+        <script src="../../resources/assets/js/moment.min.js"></script>
+        <!-- common functions -->
+        <script src="../../resources/assets/js/beoro_common.js"></script>
+
+        <!-- jQuery validation -->
+        <script src="../../resources/assets/js/lib/jquery-validation/jquery.validate.min.js"></script>
+        <!-- enchanced select box, tag handler -->
+        <script src="../../resources/assets/js/lib/select2/select2.min.js"></script>
+        <!-- datepicker -->
+        <script src="../../resources/assets/js/lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <!-- WYSIWG Editor -->
+        <script src="../../resources/assets/js/lib/ckeditor/ckeditor.js"></script>
+        <!-- textarea counter -->
+        <script src="../../resources/assets/js/lib/jquery-textarea-counter/jquery.textareaCounter.plugin.min.js"></script>
+
+        <script src="../../resources/assets/js/pages/beoro_form_validation.js"></script>
+        <script src="../../resources/assets/js/ajoutmail.js"></script>
+        <script src="../../resources/assets/js/ajout.js"></script>
+
+        <!-- stackable.js -->
+        <script src="../../resources/assets/js/lib/stacktable/stacktable.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#stacking-run').on('click', function(e) {
+                    e.preventDefault();
+                    $('#table-stacking-simple').stacktable({hideOriginal: true});
+                    $(this).closest('p').hide();
+                });
+                $('#table-stacking-responsive').stacktable({class: 'stacktable small-only'});
+            })
+        </script> 
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+</html>    
+
+

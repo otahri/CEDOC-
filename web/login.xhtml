@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>login</title>
+        <link rel="stylesheet" href="resources/assets/css/login.css"></link>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet'></link>
+        <!-- jQuery framework -->
+        <script src="resources/assets/js/jquery.min.js"></script>
+        <!-- validation -->
+        <script src="resources/assets/js/lib/jquery-validation/jquery.validate.js"></script>
+
+
+    </h:head>
+    <h:body>
+
+        <div id="login-wrapper" class="clearfix">
+            <div class="main-col">
+                <img src="resources/assets/logocedoc.png" alt="" class="logo_img" ></img>
+
+                <div class="panel">
+                    <p class="heading_main">Connexion</p>
+
+
+                    <h:form >
+
+                        <label >E-mail</label>
+                        <p:inputText id="username" value="#{loginBean.uname}" />
+                        <label >Mot de passe</label>
+                        <p:password  id="password" value="#{loginBean.password}"  />
+
+
+                        <div class="submit_sect">
+                            <p:commandButton action="#{loginBean.loginProject}" value="Se connecter" /> 
+
+                        </div>
+                    </h:form>
+
+                </div>
+                <div class="panel">
+                    <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
+ 
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </h:body> 
+
+</html>

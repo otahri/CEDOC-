@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <meta charset="UTF-8"></meta>
+        <title>Acceuil</title>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no"></meta>
+        <link rel="icon" type="resources/assets/image/ico" href="favicon.ico"></link>
+
+        <!-- common stylesheets-->
+        <!-- bootstrap framework css -->
+        <link rel="stylesheet" href="resources/assets/bootstrap/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="resources/assets/bootstrap/css/bootstrap-responsive.min.css"></link>
+        <!-- iconSweet2 icon pack (16x16) -->
+        <link rel="stylesheet" href="resources/assets/img/icsw2_16/icsw2_16.css"></link>
+        <!-- splashy icon pack -->
+        <link rel="stylesheet" href="resources/assets/img/splashy/splashy.css"></link>
+        <!-- flag icons -->
+        <link rel="stylesheet" href="resources/assets/img/flags/flags.css"></link>
+        <!-- power tooltips -->
+        <link rel="stylesheet" href="resources/assets/js/lib/powertip/jquery.powertip.css"></link>
+        <!-- google web fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Abel"></link>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"></link>
+
+
+
+
+        <!-- main stylesheet -->
+        <link rel="stylesheet" href="resources/assets/css/beoro.css"></link>
+
+
+    </h:head>
+
+
+
+
+
+    <body class="bg_d">
+        <!-- main wrapper (without footer) -->    
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="pull-right top-search" style="padding-button:20px;">                          
+                        <h:form><p:commandLink action="#{loginBean.logout}" value="Se deconnecter"  ajax="false"/></h:form>                          							
+                    </div>						
+                    <div class="pull-right top-search" style="padding-right:20px;">
+
+                    </div>
+
+
+                    <div id="fade-menu" class="pull-left">
+                        <ul class="clearfix" id="mobile-nav">
+                            <li>
+                                <a href="index.xhtml">Accueil</a>
+                            </li>
+                            <li><a href="javascript:void(0)">Structure</a>
+                                <ul>
+                                    <li>
+                                        <a href="jsf/laboratoire/List.xhtml">Laboratoirs</a>
+                                    </li>
+                                    <li>
+                                        <a href="jsf/equipe/List.xhtml">Equipes</a>
+                                    </li>
+                                    <li>
+                                        <a href="jsf/professeur/List.xhtml">professeurs encadrants</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <c:if test="#{loginBean.role=='secretaire' }" >
+                                <li>
+                                    <a href="javascript:void(0)">Parametrage</a>
+                                    <ul>
+                                        <li>
+                                            <a href="jsf/parametre/Create.xhtml">Ajout des donnees</a>
+                                        </li>
+                                        <li>
+                                            <a href="jsf/parametre/Affecter_prof.xhtml">Affectation </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </c:if>
+                            <c:if test="#{loginBean.role=='Doctorant' }" >
+                                <li>
+                                    <a href="#">Inscription</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Consulter les Pièces</a>
+                                        </li>
+                                        <li>
+                                            <a href="inscription.xhtml">S'inscrire</a>
+                                        </li>
+                                        <li>
+                                            <a href="Profile_doc.xhtml">Profile</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </c:if>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ul id="breadcrumbs">
+                <li><a href="index.xhtml"><i class="icon-home"></i></a></li>
+            </ul>
+        </div>  
+
+        <!-- main content -->
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12">
+
+
+
+
+
+                    <c:if test="#{loginBean.role=='Doctorant' }" >
+
+                        <c:if test="#{loginBean.exist()==false}"  >
+
+                            <div class="alert alert-error">
+                                <a data-dismiss="alert" class="close">×</a>
+                                <strong>Vous etes nouveau!</strong> vous devez completer l'inscription <h:link outcome="inscription" value="S'inscrire" />
+                            </div>
+                        </c:if>
+
+                        <c:if test="#{loginBean.etat()=='Rejet'}" >
+                            <div class="alert alert-error">
+                                <a data-dismiss="alert" class="close">×</a>
+                                <strong>Votre inscription est rejete !</strong> Veuillez modifier vos informations 
+                            </div>
+
+                        </c:if>
+
+
+                    </c:if>
+
+
+
+
+
+
+
+
+                    <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
+
+
+
+
+
+                    <c:if test="#{loginBean.role=='Doctorant' }" >
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <div class="w-box w-box-blue">
+
+                                    <div class="w-box-header">
+                                        <h4>Presentation</h4>
+                                    </div>
+                                    <div class="w-box-content cnt_a">
+                                        Conformément aux Normes Nationales relatives à l’organisation du cycle de Doctorat, modifiées lors de la troisième conférence pédagogique nationale sur la réforme du cycle de Doctorat à Skhirat le 20 Avril 2007 et approuvé ensuite par la CNCES, L’Université Mohammed V-Agdal a proposé la création d’un centre d’études doctorales par établissement. Dans cet esprit l’EMI a entrepris la création d’un CEDOC dont l’intitulé « Sciences et Techniques pour l’Ingénieur » qui a été approuvé par le Conseil de l’Université du 30 octobre 2007. Les formations, le fonctionnement ainsi que les conditions d’accès sont stipulés dans le descriptif de l’accréditation des formations doctorales. La préparation et la soutenance des thèses sont régies par la Charte des thèses conformément aux cahiers des Normes Pédagogiques Nationales du Cycle de Doctorat tel qu’il a été publié au Bulletin Officiel n° 5674 du 16 octobre 2008.
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </c:if>
+
+
+                    <c:if  test="#{loginBean.role=='secretaire' }" >
+                        <div class="row-fluid">
+                            <div class="span12">
+
+
+                                <div class="w-box w-box-blue hideable">
+                                    <div class="w-box-header">
+                                        <h4>List inscrits</h4>
+                                    </div>
+
+                                    <div class="w-box-content">
+
+                                        <h:form id="form">
+                                            <p:dataTable id="tbl" value="#{inscriptionController.items}" var="item" widgetVar="Table"
+                                                         emptyMessage="Aucun doctorant" >
+
+                                                <p:column filterBy="#{item.idDoctorant.idDoctorant}" headerText="id" footerText="" filterMatchMode="contains">
+                                                    <h:outputText value="#{item.idDoctorant.idDoctorant}" />
+                                                </p:column>
+                                                <p:column filterBy="#{item.idDoctorant.cin}" headerText="CIN" footerText="" filterMatchMode="contains">
+                                                    <h:outputText value="#{item.idDoctorant.cin}" />
+                                                </p:column>
+                                                <p:column filterBy="#{item.idDoctorant.nom}" headerText="Nom" footerText="" filterMatchMode="contains">
+                                                    <h:outputText value="#{item.idDoctorant.nom}" />
+                                                </p:column>
+                                                <p:column filterBy="#{item.idDoctorant.prenom}" headerText="Prenom" footerText=""  filterMatchMode="contains">
+                                                    <h:outputText value="#{item.idDoctorant.prenom}" />
+                                                </p:column>
+                                                <p:column filterBy="#{item.idDoctorant.email1}" headerText="Email" footerText=""  filterMatchMode="contains">
+                                                    <a href="mailto:#{item.idDoctorant.email1}" ><h:outputText value="#{item.idDoctorant.email1}" /></a>
+                                                </p:column>
+                                                <p:column filterBy="#{item.sujet}" headerText="Sujet" footerText=""  filterMatchMode="contains">
+                                                    <h:outputText value="#{item.sujet}" />
+                                                </p:column>
+
+                                                <p:column  filterBy="#{item.etat}" headerText="Etat" footerText=""  filterMatchMode="contains">
+
+                                                    <span class="label label-success" > <h:outputText value="#{item.etat}" rendered="#{item.etat=='Valide'}" /></span>
+                                                    <span class="label label-important" > <h:outputText value="#{item.etat}" rendered="#{item.etat=='Rejet'}" /></span>
+                                                    <span class="label label-inverse" > <h:outputText value="#{item.etat}" rendered="#{item.etat=='Abandonnant'}" /></span>
+                                                    <span class="label label-info" > <h:outputText value="#{item.etat}" rendered="#{item.etat=='Gradué'}" /></span>
+
+                                                    <span class="label " > <h:outputText value="#{item.etat}" rendered="#{item.etat=='En attente'}" /></span>
+
+
+
+                                                </p:column>
+                                                <p:column>
+                                                    <f:facet name="header">
+                                                        <h:outputText value="Options"/>
+                                                    </f:facet>
+                                                    <h:commandLink action="#{inscriptionController.prepareEdit()}" > <i class="icon-eye-open"></i> </h:commandLink>
+
+                                                </p:column>
+
+
+                                            </p:dataTable>
+
+
+
+                                        </h:form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </c:if>
+
+
+                    <c:if  test="#{loginBean.role=='directeur' }" >
+                        <div class="row-fluid">
+                            <div class="span12">
+
+
+                                <div class="w-box w-box-blue hideable">
+                                    <div class="w-box-header">
+                                        <h4>Statistiques inscriptions</h4>
+                                    </div>
+
+                                    <div class="w-box-content">
+
+                                        <p:chart type="line" model="#{chartview.animatedModel1}" />
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </c:if>
+
+
+
+                    <div class="row-fluid">
+
+
+                        <div class="span4">
+                            <h:link  outcome="/jsf/professeur/List" >
+                                <div class="w-box w-box-blue">
+
+                                    <div class="w-box-header">
+                                        <h4>List professeur</h4>
+                                    </div>
+
+                                </div>
+                            </h:link>   
+                        </div>
+
+
+                        <div class="span4">
+                            <h:link  outcome="/jsf/equipe/List" >
+                                <div class="w-box w-box-blue">
+
+                                    <div class="w-box-header">
+                                        <h4>List equipe</h4>
+                                    </div>
+
+                                </div>
+                            </h:link>   
+                        </div>
+
+
+
+                        <div class="span4">
+                            <h:link  outcome="/jsf/laboratoire/List" >
+                                <div class="w-box w-box-blue">
+
+                                    <div class="w-box-header">
+                                        <h4>List laboratoire</h4>
+                                    </div>
+
+                                </div>
+                            </h:link>   
+                        </div>
+
+                    </div>
+
+                    <c:if test="#{loginBean.role=='secretaire' }"   >
+                        <div class="row-fluid">
+
+
+                            <div class="span4">
+                                <h:link  outcome="/jsf/utilisateur/Create" >
+                                    <div class="w-box w-box-blue">
+
+                                        <div class="w-box-header">
+                                            <h4>Ajouter nouveau doctorant</h4>
+                                        </div>
+
+                                    </div>
+                                </h:link>   
+                            </div>
+
+
+                            <div class="span4">
+
+                                <h:link  outcome="/jsf/parametre/Create" >
+                                    <div class="w-box w-box-blue">
+                                        <div class="w-box-header">
+                                            <h4>Parametrage</h4>
+                                        </div>
+
+
+                                    </div>
+                                </h:link> 
+                            </div>
+
+                            <div class="span4">
+
+                                <h:link  outcome="/jsf/parametre/Affecter_prof" >
+                                    <div class="w-box w-box-blue">
+                                        <div class="w-box-header">
+                                            <h4>Affectation des profs</h4>
+                                        </div>
+
+
+                                    </div>
+                                </h:link> 
+                            </div>
+
+                        </div>
+                    </c:if>      
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- bootstrap Framework plugins -->
+        <script src="resources/assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- top menu -->
+        <script src="resources/assets/js/jquery.fademenu.js"></script>
+        <!-- top mobile menu -->
+        <script src="resources/assets/js/selectnav.min.js"></script>
+        <!-- actual width/height of hidden DOM elements -->
+        <script src="resources/assets/js/jquery.actual.min.js"></script>
+        <!-- jquery easing animations -->
+        <script src="resources/assets/js/jquery.easing.1.3.min.js"></script>
+        <!-- power tooltips -->
+        <script src="resources/assets/js/lib/powertip/jquery.powertip-1.1.0.min.js"></script>
+        <!-- date library -->
+        <script src="resources/assets/js/moment.min.js"></script>
+        <!-- common functions -->
+        <script src="resources/assets/js/beoro_common.js"></script>
+
+
+
+
+    </body>
+
+
+</html>
+

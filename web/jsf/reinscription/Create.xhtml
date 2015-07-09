@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateReinscriptionTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateReinscriptionLabel_idReinscription}" for="idReinscription" />
+                    <h:inputText id="idReinscription" value="#{reinscriptionController.selected.idReinscription}" title="#{bundle.CreateReinscriptionTitle_idReinscription}" required="true" requiredMessage="#{bundle.CreateReinscriptionRequiredMessage_idReinscription}"/>
+                    <h:outputLabel value="#{bundle.CreateReinscriptionLabel_date}" for="date" />
+                    <h:inputText id="date" value="#{reinscriptionController.selected.date}" title="#{bundle.CreateReinscriptionTitle_date}" >
+                        <f:convertDateTime pattern="MM/dd/yyyy" />
+                    </h:inputText>
+                    <h:outputLabel value="#{bundle.CreateReinscriptionLabel_idInscription}" for="idInscription" />
+                    <h:selectOneMenu id="idInscription" value="#{reinscriptionController.selected.idInscription}" title="#{bundle.CreateReinscriptionTitle_idInscription}" required="true" requiredMessage="#{bundle.CreateReinscriptionRequiredMessage_idInscription}">
+                        <f:selectItems value="#{inscriptionController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{reinscriptionController.create}" value="#{bundle.CreateReinscriptionSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{reinscriptionController.prepareList}" value="#{bundle.CreateReinscriptionShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreateReinscriptionIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

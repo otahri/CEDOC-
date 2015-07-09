@@ -1,0 +1,210 @@
+<div id="faq_accordion" class="accordion">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_1" data-toggle="collapse" class="accordion-toggle">1. laoreet posuere feugiat faucibus in, accumsan ultrices sociosqu?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_1">
+            <div class="accordion-inner">mollis sapien eget venenatis, inceptos dapibus</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_2" data-toggle="collapse" class="accordion-toggle">2. nisi suspendisse mattis netus dictum porttitor mi blandit aenean vivamus nibh, habitant condimentum ultricies bibendum velit facilisis taciti pharetra?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_2">
+            <div class="accordion-inner">tristique ante et dictumst sociosqu, integer vestibulum dolor</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_3" data-toggle="collapse" class="accordion-toggle">3. integer habitant nam velit vitae vulputate urna, aliquet euismod aliquam enim est?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_3">
+            <div class="accordion-inner">etiam posuere eros non tempor platea odio mollis tempor, placerat id sodales hac ad venenatis auctor placerat, scelerisque est suspendisse rhoncus nam rhoncus iaculis</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_4" data-toggle="collapse" class="accordion-toggle">4. congue viverra ultricies eleifend dui, interdum risus vivamus?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_4">
+            <div class="accordion-inner">sagittis mollis nulla congue accumsan adipiscing lectus arcu primis, cras praesent massa eget ultrices condimentum felis venenatis, turpis felis semper in habitant lacinia litora</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_5" data-toggle="collapse" class="accordion-toggle">5. tincidunt cras curabitur quisque iaculis a potenti, euismod dictum lectus felis torquent pellentesque, nisi duis curabitur nostra ut?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_5">
+            <div class="accordion-inner">dolor vulputate ut consectetur porttitor aptent neque purus inceptos, aptent conubia fringilla purus etiam tempus suscipit, bibendum morbiimperdiet fermentum phasellus ligula morbi</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_6" data-toggle="collapse" class="accordion-toggle">6. adipiscing faucibus nisi magna condimentum consequat felis, nulla amet per aliquam viverra?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_6">
+            <div class="accordion-inner">tortor dapibus morbi pellentesque odio enim, volutpat egestas porta aliquam</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_7" data-toggle="collapse" class="accordion-toggle">7. aliquam justo primis interdum, cubilia?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_7">
+            <div class="accordion-inner">platea dui dapibus interdum id gravida quisque malesuada bibendum nunc, quam maecenas etiam dictum aliquam ultrices nec</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_8" data-toggle="collapse" class="accordion-toggle">8. ipsum fermentum etiam tempor fringilla ultrices aliquet, lorem fames hac erat?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_8">
+            <div class="accordion-inner">metus tempor viverra vel erat, nec ante massa</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_9" data-toggle="collapse" class="accordion-toggle">9. pharetra et non vitae potenti ut purus, auctor maecenas consequat accumsan adipiscing?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_9">
+            <div class="accordion-inner">nostra ullamcorper hendrerit aliquet nec per vivamus senectus, donec convallis nunc rhoncus ante commodo purus, adipiscing faucibus pharetra urna commodo netus</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_10" data-toggle="collapse" class="accordion-toggle">10. lectus egestas praesent sit sollicitudin inceptos dui dolor, nostra pharetra lacus vestibulum hac sit, habitasse primis quam elementum suspendisse himenaeos?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_10">
+            <div class="accordion-inner">porttitor scelerisque id pretium donec ornare, nisi tortor elit</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_11" data-toggle="collapse" class="accordion-toggle">11. tempor augue netus taciti litora, nostra condimentum quisque donec, id enim suspendisse?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_11">
+            <div class="accordion-inner">ad habitant egestas aptent nullam scelerisque consequat diam aptent et, nulla primis donec nibh ligula proin cursus luctus, quisque varius eu ligula senectus molestie orci nam</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_12" data-toggle="collapse" class="accordion-toggle">12. et lacinia ad platea fermentum libero consectetur, vestibulum in phasellus vitae?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_12">
+            <div class="accordion-inner">scelerisque proin suscipit augue fringilla morbi rhoncus, euismod habitant ad rutrum venenatis primis, potenti taciti enim nulla felis</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_13" data-toggle="collapse" class="accordion-toggle">13. magna elementum sodales ultrices mauris euismod torquent, tempus conubia vivamus felis potenti?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_13">
+            <div class="accordion-inner">orci ipsum aptent vehicula ullamcorper lacinia quis tellus litora proin, ut rutrum iaculis faucibus posuere senectus arcu</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_14" data-toggle="collapse" class="accordion-toggle">14. erat scelerisque curabitur inceptos venenatis dui aliquet tristique, in ut enim at placerat?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_14">
+            <div class="accordion-inner">fermentum enim ultricies dictumst condimentum nostra sodales a potenti ut, volutpat aenean primis odio consectetur placerat mollis</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_15" data-toggle="collapse" class="accordion-toggle">15. donec elit condimentum pharetra conubia sem vitae urna vulputate, suscipit potenti etiam bibendum ornare justo nullam?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_15">
+            <div class="accordion-inner">accumsanaliquet suscipit laoreet praesent nisi aptent sociosqu pretium, velit quam posuere vitae habitasse fusce consequat, primis maecenas accumsannetus molestie gravida accumsan</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_16" data-toggle="collapse" class="accordion-toggle">16. feugiat ad augue eros eget placerat ac donec, venenatis sem ultrices elit auctor etiam?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_16">
+            <div class="accordion-inner">senectus habitasse eget metus tempus per venenatis massa hac fringilla litora scelerisque, aptent nullam adipiscing dapibus eleifend ut consequat elit tincidunt etiam</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_17" data-toggle="collapse" class="accordion-toggle">17. gravida per mauris lacus nisi nam porta in vestibulum, etiam nunc congue libero fames luctus volutpat?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_17">
+            <div class="accordion-inner">aenean aliquam eget potenti himenaeos eleifend a lobortis mi, ante eleifend et libero nam quisque faucibus, mauris duis morbi habitant leo aliquet turpis</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_18" data-toggle="collapse" class="accordion-toggle">18. quam gravida congue dolor aenean lobortis tempor vehicula, tristique habitant nam facilisis enim nunc, nibh posuere semper sollicitudin mollis metus?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_18">
+            <div class="accordion-inner">magna euismod leo id, eleifend vestibulum</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_19" data-toggle="collapse" class="accordion-toggle">19. lacinia potenti vestibulum consectetur quis risus nam, mauris cras litora interdum senectus, faucibus vivamus netus vestibulum tempus?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_19">
+            <div class="accordion-inner">habitant nulla vitae loremvenenatis egestas sem sodales, mauris elit dolor mollis egestas mattis, euismod luctus mollis sed nullam lorem</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_20" data-toggle="collapse" class="accordion-toggle">20. condimentum habitasse ut aliquam dui, ultrices mi magna?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_20">
+            <div class="accordion-inner">odio curabitur taciti odio massa erat dolor integer aliquet erat, cubilia erat eros erat potenti felis sociosqu gravida, massa est nisi ad taciti laoreet senectus hac</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_21" data-toggle="collapse" class="accordion-toggle">21. magna amet litora amet iaculis ut lorem, lectus in laoreet fringilla amet sed eu, tristique ante class quisque fermentum?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_21">
+            <div class="accordion-inner">primis auctor rhoncus luctus lacinia phasellus, arcu vitae dolor gravida</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_22" data-toggle="collapse" class="accordion-toggle">22. amet ante hac eros accumsan cubilia, potenti in diam curabitur?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_22">
+            <div class="accordion-inner">et nec porttitor adipiscing ut convallis fusce, hendrerit elit class cubilia</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_23" data-toggle="collapse" class="accordion-toggle">23. primis pellentesque porta rhoncus tristique senectus inceptos, aptent nostra vehicula suspendisse integer per, libero viverra bibendum mollis etiam?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_23">
+            <div class="accordion-inner">et tempus aptent sapien gravida, vitae facilisis</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_24" data-toggle="collapse" class="accordion-toggle">24. blandit sollicitudin tortor pretium odio integer curabitur nam fringilla, aenean est leo congue turpis etiam ut?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_24">
+            <div class="accordion-inner">pellentesque rhoncus velitquisque, habitasse velit</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_25" data-toggle="collapse" class="accordion-toggle">25. metus mauris vivamus aliquam, aenean risus, vestibulum congue?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_25">
+            <div class="accordion-inner">bibendum accumsan in venenatis potenti, metus habitasse metus torquent eros, fringilla elementum hac</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a href="#faq_collapse_26" data-toggle="collapse" class="accordion-toggle">26. posuere porttitor ante praesent metus commodo felis, elit tempor integer urna vestibulum, platea orci risus scelerisque odio?</a>
+        </div>
+        <div class="accordion-body collapse" id="faq_collapse_26">
+            <div class="accordion-inner">venenatis interdum mattis sodales, malesuada</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <meta charset="UTF-8"></meta>
+        <title>Profile</title>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no"></meta>
+        <link rel="icon" type="resources/assets/image/ico" href="favicon.ico"></link>
+
+        <!-- common stylesheets-->
+        <!-- bootstrap framework css -->
+        <link rel="stylesheet" href="resources/assets/bootstrap/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="resources/assets/bootstrap/css/bootstrap-responsive.min.css"></link>
+        <!-- iconSweet2 icon pack (16x16) -->
+        <link rel="stylesheet" href="resources/assets/img/icsw2_16/icsw2_16.css"></link>
+        <!-- splashy icon pack -->
+        <link rel="stylesheet" href="resources/assets/img/splashy/splashy.css"></link>
+        <!-- flag icons -->
+        <link rel="stylesheet" href="resources/assets/img/flags/flags.css"></link>
+        <!-- power tooltips -->
+        <link rel="stylesheet" href="resources/assets/js/lib/powertip/jquery.powertip.css"></link>
+        <!-- google web fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Abel"></link>
+
+        <!-- main stylesheet -->
+        <link rel="stylesheet" href="resources/assets/css/beoro.css"></link>
+    </h:head>
+
+    <h:body class="bg_d">
+        <div class=" main-wrapper">
+            <div class="navbar navbar-fixed-top ">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <div class="pull-right top-search" style="padding-button:20px;">                          
+                            <h:form><p:commandLink action="#{loginBean.logout}" value="Se deconnecter"  ajax="false"/></h:form>                          							
+                        </div>						
+                        <div class="pull-right top-search" style="padding-right:20px;">
+                        </div>
+                        <div id="fade-menu" class="pull-left">
+                            <ul class="clearfix" id="mobile-nav">
+                                <li>
+                                    <a href="index.xhtml">Accueil</a>
+                                </li>
+                                <li><a href="javascript:void(0)">Structure</a>
+                                    <ul>
+                                        <li>
+                                            <a href="jsf/laboratoire/List.xhtml">Laboratoirs</a>
+                                        </li>
+                                        <li>
+                                            <a href="jsf/equipe/List.xhtml">Equipes</a>
+                                        </li>
+                                        <li>
+                                            <a href="jsf/professeur/List.xhtml">professeurs encadrants</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <c:if test="#{loginBean.role=='Doctorant' }" >
+                                    <li>
+                                        <a href="#">Inscription</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Consulter les Pièces</a>
+                                            </li>
+                                            <li>
+                                                <a href="inscription.xhtml">S'inscrire</a>
+                                            </li>
+                                            <li>
+                                                <a href="Profile_doc.xhtml">Profile</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </c:if>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <ul id="breadcrumbs">
+                    <li><a href="index.xhtml"><i class="icon-home"></i></a></li>
+                    <li><span>Profile doctorant</span></li>
+                </ul>
+            </div> 
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="w-box w-box-blue">
+                            <div class="w-box-header">
+                                <h4>Tahri</h4>
+                            </div>
+                            <div class="w-box-content cnt_b">
+                                <div class="row-fluid">
+                                    <div class="span12">
+                                        <h:form id="form">
+
+                                            <p:growl id="msgs" showDetail="true" />
+
+
+                                            <p:tabView>
+                                                <p:tab title="Informations Personnelles">
+                                                    <h:panelGrid columns="2" cellpadding="10">
+                                                        Code :<h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).code}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        Nom :<h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).nom}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        Prenom : <h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).prenom}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        sexe: <h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).sexe}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        date de naissance: <h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).datenassance}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        <ui:param name="ville_naissance_doc" value="#{doctorantController.getDoctorant(loginBean.iddoc()).villenaissance}" />
+                                                        Ville de naissance :<h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).villenaissance}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        Email 1: <h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).email1}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        Email 2:<h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).email2}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        numéro de tel 1:<h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).tel1}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        numéro de tel 2:<h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).tel2}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        Adresse :<h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).adresse}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        Employeur :<h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).employeur}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        Ville lieu d'emploi :<h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).lieuemploi}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        Ville d'emploi :<h:outputText value="#{doctorantController.getDoctorant(loginBean.iddoc()).villeEmploi}" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+                                                        Nationnalite  :<h:outputText value="Marocain" title="#{bundle.ViewDoctorantTitle_idDoctorant}"/>
+
+                                                    </h:panelGrid>
+                                                </p:tab>
+
+
+                                            </p:tabView>
+                                        </h:form >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- bootstrap Framework plugins -->
+        <script src="resources/assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- top menu -->
+        <script src="resources/assets/js/jquery.fademenu.js"></script>
+        <!-- top mobile menu -->
+        <script src="resources/assets/js/selectnav.min.js"></script>
+        <!-- actual width/height of hidden DOM elements -->
+        <script src="resources/assets/js/jquery.actual.min.js"></script>
+        <!-- jquery easing animations -->
+        <script src="resources/assets/js/jquery.easing.1.loginBean.iddoc().min.js"></script>
+        <!-- power tooltips -->
+        <script src="resources/assets/js/lib/powertip/jquery.powertip-1.1.0.min.js"></script>
+        <!-- date library -->
+        <script src="resources/assets/js/moment.min.js"></script>
+        <!-- common functions -->
+        <script src="resources/assets/js/beoro_common.js"></script>
+
+    </h:body>
+</html>

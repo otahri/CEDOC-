@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateNationaliteTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateNationaliteLabel_idNationalite}" for="idNationalite" />
+                    <h:inputText id="idNationalite" value="#{nationaliteController.selected.idNationalite}" title="#{bundle.CreateNationaliteTitle_idNationalite}" required="true" requiredMessage="#{bundle.CreateNationaliteRequiredMessage_idNationalite}"/>
+                    <h:outputLabel value="#{bundle.CreateNationaliteLabel_nationalite}" for="nationalite" />
+                    <h:inputText id="nationalite" value="#{nationaliteController.selected.nationalite}" title="#{bundle.CreateNationaliteTitle_nationalite}" />
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{nationaliteController.create}" value="#{bundle.CreateNationaliteSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{nationaliteController.prepareList}" value="#{bundle.CreateNationaliteShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreateNationaliteIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

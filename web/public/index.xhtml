@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <meta charset="UTF-8"></meta>
+        <title>Acceuil</title>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no"></meta>
+        <link rel="icon" type="../resources/assets/image/ico" href="favicon.ico"></link>
+
+        <!-- common stylesheets-->
+        <!-- bootstrap framework css -->
+        <link rel="stylesheet" href="../resources/assets/bootstrap/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="../resources/assets/bootstrap/css/bootstrap-responsive.min.css"></link>
+        <!-- iconSweet2 icon pack (16x16) -->
+        <link rel="stylesheet" href="../resources/assets/img/icsw2_16/icsw2_16.css"></link>
+        <!-- splashy icon pack -->
+        <link rel="stylesheet" href="../resources/assets/img/splashy/splashy.css"></link>
+        <!-- flag icons -->
+        <link rel="stylesheet" href="../resources/assets/img/flags/flags.css"></link>
+        <!-- power tooltips -->
+        <link rel="stylesheet" href="../resources/assets/js/lib/powertip/jquery.powertip.css"></link>
+        <!-- google web fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Abel"></link>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"></link>
+
+
+
+
+        <!-- main stylesheet -->
+        <link rel="stylesheet" href="../resources/assets/css/beoro.css"></link>
+
+
+    </h:head>
+
+
+
+
+
+    <body class="bg_d">
+        <!-- main wrapper (without footer) -->    
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div class="pull-right top-search" style="padding-button:20px;">                          
+                        <h5><a href="../login.xhtml" >Se connecter</a>  </h5>                             							
+                    </div>						
+                    <div class="pull-right top-search" style="padding-right:20px;">
+
+                    </div>
+
+
+                     <div id="fade-menu" class="pull-left">
+                        <ul class="clearfix" id="mobile-nav">
+                            <li>
+                                <a href="index.xhtml">Accueil</a>
+                            </li>
+                            <li><a href="javascript:void(0)">Structure</a>
+                                <ul>
+                                    <li>
+                                        <a href="Listlabo.xhtml">Laboratoirs</a>
+                                    </li>
+                                    <li>
+                                        <a href="Listequipe.xhtml">Equipes</a>
+                                    </li>
+                                    <li>
+                                        <a href="Listprof.xhtml">professeurs encadrants</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#">Inscription</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Consulter les Pièces</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumbs -->
+        <div class="container">
+            <ul id="breadcrumbs">
+                <li><a href="index.xhtml"><i class="icon-home"></i></a></li>
+            </ul>
+        </div>  
+
+        <!-- main content -->
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12">
+
+
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="w-box w-box-blue">
+
+                                <div class="w-box-header">
+                                    <h4>Presentation</h4>
+                                </div>
+                                <div class="w-box-content cnt_a">
+                                    Conformément aux Normes Nationales relatives à l’organisation du cycle de Doctorat, modifiées lors de la troisième conférence pédagogique nationale sur la réforme du cycle de Doctorat à Skhirat le 20 Avril 2007 et approuvé ensuite par la CNCES, L’Université Mohammed V-Agdal a proposé la création d’un centre d’études doctorales par établissement. Dans cet esprit l’EMI a entrepris la création d’un CEDOC dont l’intitulé « Sciences et Techniques pour l’Ingénieur » qui a été approuvé par le Conseil de l’Université du 30 octobre 2007. Les formations, le fonctionnement ainsi que les conditions d’accès sont stipulés dans le descriptif de l’accréditation des formations doctorales. La préparation et la soutenance des thèses sont régies par la Charte des thèses conformément aux cahiers des Normes Pédagogiques Nationales du Cycle de Doctorat tel qu’il a été publié au Bulletin Officiel n° 5674 du 16 octobre 2008.
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row-fluid">
+
+
+                        <div class="span4">
+                            <h:link  outcome="Listprof" >
+                                <div class="w-box w-box-blue">
+
+                                    <div class="w-box-header">
+                                        <h4>List professeur</h4>
+                                    </div>
+                                    <div class="w-box-content cnt_a">
+
+                                    </div>
+                                </div>
+                            </h:link>   
+                        </div>
+
+
+                        <div class="span4">
+                            <h:link  outcome="Listequipe" >
+                                <div class="w-box w-box-blue">
+
+                                    <div class="w-box-header">
+                                        <h4>List equipe</h4>
+                                    </div>
+                                    <div class="w-box-content cnt_a">
+
+                                    </div>
+                                </div>
+                            </h:link>   
+                        </div>
+
+
+
+                        <div class="span4">
+                            <h:link  outcome="Listlabo" >
+                                <div class="w-box w-box-blue">
+
+                                    <div class="w-box-header">
+                                        <h4>List laboratoire</h4>
+                                    </div>
+                                    <div class="w-box-content cnt_a">
+
+                                    </div>
+                                </div>
+                            </h:link>   
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../resources/assets/js/jquery.min.js"></script>
+        <!-- bootstrap Framework plugins -->
+        <script src="../resources/assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- top menu -->
+        <script src="../resources/assets/js/jquery.fademenu.js"></script>
+        <!-- top mobile menu -->
+        <script src="../resources/assets/js/selectnav.min.js"></script>
+        <!-- actual width/height of hidden DOM elements -->
+        <script src="../resources/assets/js/jquery.actual.min.js"></script>
+        <!-- jquery easing animations -->
+        <script src="../resources/assets/js/jquery.easing.1.3.min.js"></script>
+        <!-- power tooltips -->
+        <script src="../resources/assets/js/lib/powertip/jquery.powertip-1.1.0.min.js"></script>
+        <!-- date library -->
+        <script src="../resources/assets/js/moment.min.js"></script>
+        <!-- common functions -->
+        <script src="../resources/assets/js/beoro_common.js"></script>
+
+
+
+
+    </body>
+
+
+</html>
+
